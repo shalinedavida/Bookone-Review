@@ -1,0 +1,92 @@
+*{
+    box-sizing: border-box;
+   
+}
+body{
+  overflow-x: hidden;
+ 
+  
+
+}
+
+
+.suggestive-title{
+  width: 30%;
+  padding: 50px 20px 100px 20px;
+  line-height: 2;
+  margin-left: 400px;
+  margin: 0px 200px;
+  height: 80vh;
+ 
+  h1{
+font-size: 35px;
+color:rgb(255, 225, 0);
+margin-left: 30px;
+text-transform: uppercase;
+  }
+  h2{
+    font-size: 25px;
+    margin-top: 20px;
+    color:rgb(258,228,0);
+    margin-left: 30px;
+    text-transform: uppercase;
+  }
+  p{
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 2;
+    color: #000;
+  }
+}
+.header-container {
+ background-color: rgb(102, 102, 194);
+ margin-top: 10px;
+ padding: 0;
+ margin: 0;
+}
+.trevorimage {
+   margin-left: 250%;
+  margin-top: -300px;
+
+}
+
+
+.reflective-blog{
+    width: 40%;
+    margin-left: 50px;
+    margin-top: 100px;
+ p{
+   margin-left: 5%;
+   justify-content: space-between;
+   line-height: 2;
+   font-size: 18px;
+
+ }
+  strong{
+    font-size: 20px;
+    margin-top: 20px;
+    line-height: 2;
+    margin-left: 20px; 
+ } 
+    
+}
+ 
+.trevor-transition {
+    margin-left: 140%;
+    width: 100%;
+    margin-top: -300px;
+    transform: rotate(30deg);
+    opacity: 0.8;
+    transition: transform 0.5s, opacity 0.5s;
+ } 
+/* .trevors-transition{
+    margin-left: 70%;
+    margin-top: 400px;
+    width: 0%;
+    transform: rotate(-30deg);
+    opacity: 0.9;
+    transition: transform 0.5s, opacity 0.5s;
+} */ 
+
+
+
