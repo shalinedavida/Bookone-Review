@@ -185,6 +185,18 @@ body{
     margin-top: 0.7cm;
   }
 
+  .family_protection{
+    display: flex;
+  }
+.family_image img{
+  margin-left: 40vh;
+  height: 75vh;
+  width: 30vw;
+}
+.family_paragraph{
+  margin-left: 12vh;
+  margin-top: -2vh;
+}
 
   #summary{
     margin-top: 15vh;
