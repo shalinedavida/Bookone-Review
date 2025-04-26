@@ -1,0 +1,178 @@
+@font-face {
+  font-family: poppins;
+  src: url(Fonts/Poppins-Regular.ttf);
+}
+body{
+  font-family: poppins;
+}
+.navigation_bornacrime{
+    border: solid 2px;
+    width: 15vw;
+    height: 100vh;
+    background-color: none;
+    /* position: fixed; */
+    
+}
+.borna_crimebook{
+    display: flex;
+}
+#navigation_list{
+    list-style: none;
+    line-height: 10vh;
+    font-size: 150%;
+    
+    
+}
+#navigation_list a{
+    color: rgb(23, 23, 139);
+    text-decoration: none;
+
+    
+
+}
+#navigation_list a:hover{
+    color:orange;
+    
+}
+.core_issues{
+    margin-left: 1.5cm;
+    line-height: 2vh;
+    margin-top: -1cm;
+    list-style-type: square white;
+    font-size: 65%;
+    font-style: italic;
+}
+.book_img{
+   display: flex;
+   /* border: solid 1px; */
+   margin-left: 9cm;
+   width: 100%;
+    
+}
+.noah_img{
+    margin-left: 12cm;
+    background-image:url(./Images/thumbnail.jpg);
+    width: 200vw;
+    /* margin: auto; */
+    height: 70vh;
+    background-size:auto;
+    background-repeat: no-repeat;
+}
+.noah_img img{
+    height: 80vh;
+    width: 80vw;
+    
+}
+.book_parag{
+    margin-left: 10cm;
+    margin-top: 2.5cm;
+    font-style: italic;
+}
+.love_relationship{
+    display: flex;
+}
+.loveandrelationships_topic{
+    text-align: center;
+    margin-top: 3cm;
+}
+.loverelationship_paragraph{
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+}
+.loveandrelationship_image img{
+    height: 73.5vh;
+    width: 40vw;
+    margin-left:9cm ;
+    margin-top: 1cm;
+}
+
+/* body {
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #F4F6FA;
+  } */
+  .sidenav {
+    height: 100vh;
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #232946;
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.06);
+  }
+  .sidenav a {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    color: #EEBBC3;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background 0.2s, color 0.2s;
+    border-left: 4px solid transparent;
+    margin-bottom: 8px;
+  }
+  .sidenav a:hover, .sidenav a.active {
+    background: #EEBBC3;
+    color: #232946;
+    border-left: 4px solid #232946;
+  }
+  .sidenav i {
+    margin-right: 18px;
+    font-size: 1.3em;
+    width: 24px;
+    text-align: center;
+  }
+  .feelinglikeanoutsider_heading{
+    text-align: center;
+    margin-top: 3cm;
+    font-family: poppins;
+    font-size: 3.5vh;
+  }
+  .feelinglikeanoutsider{
+    display: flex;
+    margin-left: 9cm;
+    
+  }
+  .feelinglikeanoutsider_image img{
+        margin-left: 2cm;
+        margin-top: 0.5cm;
+        height: 80vh;
+        width: 40vw;
+  }
+  .patricia{
+    display: flex;
+  }
+  .patricia_images img{
+    margin-left: 9cm;
+    height: 94vh;
+    width: 40vw;
+    margin-top: 0.7cm;
+
+  }
+  .patricia_protagonist{
+    text-align: center;
+    margin-top: 3cm;
+  }
+  .patricia_parag{
+    margin-left: 2cm;
+  }
+  .identity_heading{
+    /* text-align: center; */
+    margin-top: 3cm;
+    font-size: 3.5vh;
+   margin-left: 100vh;
+  }
+  .identity{
+    display: flex;
+    margin-left: 9cm;
+    margin-top: 1.5cm;
+  }
+  .identity_image img{
+    margin-left: 3cm;
+    height: 12cm ;
+    width: 16cm;
+    margin-top: 0.7cm;
+  }
