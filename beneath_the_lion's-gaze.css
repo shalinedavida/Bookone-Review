@@ -1,0 +1,479 @@
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+body {
+    font-family: poppins;
+    margin-top: -0%;
+    margin-left: -0%;
+    overflow-x: hidden;
+}
+
+p {
+    font-size: 1.11em;
+}
+
+#flag {
+    position: relative;
+    width: 100vw;
+    height: 25vh;
+    overflow: hidden;
+}
+
+#right_lion {
+    position: relative;
+    height: 20vh;
+    overflow: visible;
+    top: -28vh;
+    margin-left: 2vw;
+}
+
+#left_lion {
+    position: relative;
+    height: 20vh;
+    overflow: visible;
+    top: -28vh;
+    margin-left: 80vw;
+}
+
+#title {
+    position: relative;
+    margin-top: -50vh;
+    font-size: 3em;
+    text-align: center;
+    color: black;
+    border: none;
+    padding: 5%;
+
+
+}
+
+.container {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    line-height: 12vh;
+}
+
+.content {
+    margin-left: 5vw;
+}
+
+#author {
+    display: flex;
+    margin-top: 15vh;
+    gap: 8vw;
+    background-color: white;
+    width: 70vw;
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
+    margin-bottom: 5vh;
+}
+
+.image img {
+    width: 25vw;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(2, 2, 56);
+    padding: 2%;
+}
+
+.about {
+    font-size: 140%;
+}
+
+#issues_raised {
+    margin-top: 5vh;
+    display: flex;
+}
+
+#review {
+    margin-top: 15vh;
+    position: absolute;
+}
+
+#marketing {
+    margin-top: 15vh;
+}
+
+.socials {
+    display: flex;
+    gap: 6vw;
+    margin-left: 8vw;
+}
+
+.about h1 {
+    color: rgb(230, 168, 179)
+}
+
+.vl {
+    border-left: 2px solid rgb(197, 143, 62);
+    height: 510vh;
+    position: absolute;
+    left: 10vw;
+    margin-top: -3.5vh;
+
+}
+
+.picture {
+    height: 50vh;
+    margin-top: -50vh;
+    margin-left: 60vw;
+}
+
+#family {
+    width: 25vw;
+    position: relative;
+    left: -18vw;
+    margin-top: 5vh;
+    border-radius: 20px;
+    box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
+
+}
+
+h2 {
+    color: orange;
+    margin-top: 10vh;
+}
+
+.church {
+    display: flex;
+    margin-top: 10vh;
+    margin-left: vw;
+    gap: 5vw;
+}
+
+.church img {
+    width: 30vw;
+    border-radius: 20px;
+    box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
+}
+
+#know_orthodox {
+    background-color: rgb(197, 143, 62);
+    color: white;
+    padding: 3% 4%;
+    font-size: 2em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
+}
+
+#church {
+    width: 60vw;
+}
+
+#power {
+    width: 60vw;
+}
+
+.rulers {
+    display: flex;
+    gap: 5vw;
+}
+
+.rulers img {
+    width: 30vw;
+    height: 60vh;
+    border-radius: 20px;
+}
+
+.reviews {
+    position: relative;
+    text-align: center;
+    color: black;
+    font-size: 1em;
+    line-height: 3vh;
+    margin-top: -5vh;
+    left: 8vw;
+    width: 40vw;
+
+}
+
+.container_review {
+    color: black;
+    position: relative;
+
+}
+
+.display-left {
+    position: relative;
+    height: 7vh;
+    left: 3vh;
+    top: -25vh;
+}
+
+.display-right {
+    position: relative;
+    height: 7vh;
+    margin-right: 5vw;
+    right: -47vw;
+    top: -25vh;
+
+}
+
+#personal_reviews {
+    margin-left: 25vw;
+}
+
+.sidenav {
+    height: 90vh;
+    width: 10vw;
+    left: 0;
+    top: 25vh;
+    margin-top: -3vh;
+    background: rgb(197, 143, 62);
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+}
+
+.sidenav a {
+    display: flex;
+    align-items: center;
+    line-height: 5vh;
+    padding: 16px 24px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+
+    border-left: 2.5vw solid transparent;
+}
+
+.sidenav a:hover,
+.sidenav a.active {
+    background: #EEBBC3;
+
+}
+#marketing img{
+    width: 80vw;
+    margin-left: 5vw;
+    height: 100vh;
+}
+spam{
+    color: black;
+}
+
+
+@media only screen and (max-width:750px) {
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    #flag {
+        width: 100vw;
+
+    }
+
+    #right_lion {
+        top: -22vh;
+        margin-left: 1vw;
+        width: 15vw;
+        height: 15vh;
+
+    }
+
+    #left_lion {
+        top: -22vh;
+        margin-left: 65vw;
+        width: 15vw;
+        height: 15vh;
+    }
+
+    #title {
+        margin-top: -36vh;
+        font-size: 2em;
+    }
+
+    .content {
+        margin-left: 2vh;
+    }
+
+    #family {
+        display: none;
+    }
+
+    .sidenav {
+        height: 10vh;
+        width: 70vw;
+        margin-top: -5vh;
+        background: rgb(197, 143, 62);
+        display: flex;
+        flex-direction: row;
+        gap: 0.2%;
+        margin-left: 10vw;
+
+
+
+    }
+
+    .sidenav a {
+        padding: 16px 24px;
+        color: black;
+        text-decoration: none;
+
+
+    }
+
+    .content {
+        margin-top: 5vh;
+        margin-left: -50vw;
+    }
+
+    #issues_a {
+        display: none;
+    }
+
+    #review_a {
+        display: none;
+    }
+
+    #market_a {
+        display: none;
+    }
+
+    #author_a {
+        display: none;
+    }
+
+    #author {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .display-left {
+        display: none;
+    }
+
+    .display-right {
+        display: none;
+
+    }
+
+    .container_review {
+        display: none;
+    }
+
+    #personal_reviews {
+        display: none;
+    }
+
+    .image img {
+        width: 60vw;
+    }
+
+    #know_orthodox {
+        margin-left: -5vw;
+    }
+
+    .church img {
+        width: 35vw;
+
+    }
+
+    .vl {
+       display: none;
+
+
+    }
+
+    .rulers img {
+        height: 30vh
+    }
+
+}
+
+@media only screen and (min-width:751px) and (max-width:999px) {
+    #left_lion {
+        margin-left: 75vw;
+        margin-top: -50vh ;
+    }
+
+    #title {
+        margin-top: -48vh;
+        font-size: 2em;
+    }
+
+    .sidenav {
+        height: 10vh;
+        width: 83vw;
+        margin-top: 8vh;
+        background: rgb(197, 143, 62);
+        display: flex;
+        flex-direction: row;
+        gap: 0.2%;
+        margin-left: 10vw;
+
+
+
+    }
+    #author_a {
+        display: none;
+    }
+    .content {
+        margin-top: 25vh;
+        margin-left: -69vw;
+    }
+
+    #family_text {
+        width: 50vw;
+    }
+
+    #family {
+        width: 36vw;
+        margin-left: 7.5vw;
+        margin-top: -40vh;
+    }
+
+    .display-left {
+        margin-left: -5.5vw;
+        margin-top: -10vh;
+    }
+
+    .display-right {
+        margin-top: -10vh;
+    }
+    .vl{
+       display: none;
+    }
+
+}
+
+@media only screen and (min-width:1000px) and (max-width:1300px){
+    #left_lion {
+        margin-left: 70vw;
+    }
+#title{
+    margin-top: -45vh;
+}
+    .content {
+        margin-top: 0vh;
+
+    }
+    #family_text {
+        width: 50vw;
+    }
+    #family {
+        width: 36vw;
+        margin-left: 7.5vw;
+        margin-top: -20vh;
+    }
+    .sidenav {
+        height: 90vh;
+        width: 12vw;
+
+    }
+    .vl{
+        margin-left: 2vw;
+    }
+
+
+}
