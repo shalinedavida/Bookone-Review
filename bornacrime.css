@@ -37,10 +37,15 @@ body{
 .core_issues{
     margin-left: 1.5cm;
     line-height: 2vh;
-    margin-top: -1cm;
+    margin-top: 0.2cm;
     list-style-type: square white;
     font-size: 65%;
     font-style: italic;
+
+}
+.core_issues li{
+  list-style: none;
+  font-size: 1.5vh;
 }
 .book_img{
    display: flex;
@@ -109,7 +114,7 @@ body{
     padding: 16px 24px;
     color: #EEBBC3;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.2em;
     transition: background 0.2s, color 0.2s;
     border-left: 4px solid transparent;
     margin-bottom: 8px;

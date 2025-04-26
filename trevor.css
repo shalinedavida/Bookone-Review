@@ -1,5 +1,11 @@
 @import url("https://fonts.cdnfonts.com/css/typewriter");
       @import url("https://fonts.cdnfonts.com/css/brominates");
+     body{
+      background-color: rgb(230, 230, 230);
+     }
+      #summary{
+        margin-top: 15vh;
+      }
       details > summary {
         padding: 3vh;
         width: 50vw;
@@ -19,13 +25,16 @@
       details > p {
         background-color: rgb(196, 130, 10);
         padding: 5vh;
-        margin: 2vh;
+        /* margin: 2vh; */
         box-shadow: 10px 10px 20px #a5a4a4;
         text-align: center;
         font-family: "Hum 521 Rm", sans-serif;
         font-size: 16px;
         color: rgb(59, 55, 55);
         font-weight: bold;
+        width: 50vw;
+        margin: auto;
+        margin-top: 2vh;
       }
       .profile-container {
         max-width: 900px;
@@ -55,6 +64,9 @@
         margin-bottom: 10px;
         color: #03198a;
       }
+      #Author{
+      margin-top: 25vh;
+      }
       .book-title {
         font-size: 1.4em;
         font-weight: bold;
@@ -64,6 +76,11 @@
       .summary {
         margin-bottom: 20px;
         line-height: 1.6;
+      }
+      .author-heading{
+        text-align: center;
+        font-size: 5vh;
+        margin-left: 10vh;
       }
       .social-links a {
         margin-right: 15px;
