@@ -15,6 +15,27 @@ body{
    font-size: 25px;
    margin-left: -80px;
 }
+.text{
+  margin-top: -5vh;
+  border: none;
+  text-align: center;
+  padding: 1%;
+  display:flex ;
+  gap: 10vw;
+  margin-left: 5vw;
+
+}
+.text a {
+  color: black;
+  font-size: 1.5em;
+  text-decoration: none;
+  border: none;
+  background-color: rgba(105, 13, 13, 0.288);
+  padding: 2% 4%;
+  border-radius: 20px;
+  box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
+
+}
 a{
    text-decoration: none;
    color: black;
