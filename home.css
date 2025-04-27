@@ -1,0 +1,59 @@
+@font-face {
+    font-family: poppins;
+    src: url(fonts/Poppins-Regular.ttf);
+}
+
+body {
+    /* overflow: hidden;
+    margin-left: -0;
+    margin-top: -0; */
+    font-family: poppins;
+}
+
+
+.reading {
+    display: flex;
+    gap: 8vw;
+    margin-top: 5vh;
+    margin-left: 5vw;
+}
+
+.reading img {
+    position: relative;
+    overflow: hidden;
+    width: 8vw;
+    height: 25vh;
+    z-index: -1;
+
+}
+
+.buttons {
+    color: white;
+    margin-top: -20vh;
+    font-size: 300%;
+    margin-left: 10vw;
+    display: flex;
+    gap: 60vw;
+    z-index: 1;
+}
+
+a {
+    color: rgb(161, 199, 101);
+    text-decoration: none;
+    border: none;
+    background-color: rgba(165, 42, 42, 0.836);
+    padding: 1.5%;
+    border-radius: 20px;
+
+}
+.text{
+    border: none;
+    text-align: center;
+    padding: 1%;
+}
+h5{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
