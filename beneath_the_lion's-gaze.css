@@ -1,6 +1,6 @@
 @font-face {
     font-family: poppins;
-    src: url(fonts/Poppins-Regular.ttf);
+    src: url(Fonts/Poppins-Regular.ttf);
 }
 
 body {
@@ -12,6 +12,7 @@ body {
 
 p {
     font-size: 1.11em;
+    font-family: poppins;
 }
 
 #flag {
@@ -63,7 +64,6 @@ a {
 .content {
     margin-left: 5vw;
 }
-
 #author {
     display: flex;
     margin-top: 15vh;
@@ -114,7 +114,7 @@ a {
 
 .vl {
     border-left: 2px solid rgb(197, 143, 62);
-    height: 510vh;
+    height: 570vh;
     position: absolute;
     left: 10vw;
     margin-top: -3.5vh;
@@ -181,7 +181,7 @@ h2 {
 
 .rulers img {
     width: 30vw;
-    height: 60vh;
+    height: 70vh;
     border-radius: 20px;
 }
 
@@ -229,7 +229,7 @@ h2 {
     left: 0;
     top: 25vh;
     margin-top: -3vh;
-    background: rgb(197, 143, 62);
+    background: rgba(153, 153, 153, 0.541);
     display: flex;
     flex-direction: column;
     padding-top: 40px;
@@ -406,7 +406,6 @@ spam{
         height: 10vh;
         width: 83vw;
         margin-top: 8vh;
-        background: rgb(197, 143, 62);
         display: flex;
         flex-direction: row;
         gap: 0.2%;
@@ -420,7 +419,7 @@ spam{
     }
     .content {
         margin-top: 25vh;
-        margin-left: -69vw;
+        margin-left: -79vw;
     }
 
     #family_text {
@@ -444,12 +443,19 @@ spam{
     .vl{
        display: none;
     }
+    .rulers img{
+        height:25vh
+    }
 
 }
 
 @media only screen and (min-width:1000px) and (max-width:1300px){
+    body{
+        overflow-x: hidden;
+    }
     #left_lion {
-        margin-left: 70vw;
+        margin-left: 75vw;
+        margin-top: -50vh;
     }
 #title{
     margin-top: -45vh;
@@ -459,21 +465,29 @@ spam{
 
     }
     #family_text {
-        width: 50vw;
+        width: 48vw;
     }
     #family {
         width: 36vw;
         margin-left: 7.5vw;
-        margin-top: -20vh;
+        margin-top: 10vh;
     }
     .sidenav {
         height: 90vh;
-        width: 12vw;
+        width: 15vw;
 
     }
     .vl{
-        margin-left: 2vw;
+       display: none;
+    }
+    .display-left {
+        margin-left: -5.5vw;
+        margin-top: -10vh;
     }
 
+    .display-right {
+        margin-top: -10vh;
+       right: -50vw;
+    }
 
 }

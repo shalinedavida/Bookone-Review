@@ -74,6 +74,7 @@ body {
   margin-left: 60vh;
   background: linear-gradient(0, 0, 0, 0.5), linear-gradient(0, 0, 0, 0.5);
   margin-top: 10vh;
+  box-shadow: 0 6px 35px rgba(5, 5, 5, 0.81);
 }
 
 .noah_img img {
@@ -107,6 +108,7 @@ body {
   width: 40vw;
   margin-left: 9cm;
   margin-top: 1cm;
+  box-shadow: 0 6px 35px rgba(5, 5, 5, 0.81);
 }
 
 /* body {
@@ -171,6 +173,7 @@ body {
   margin-top: 0.5cm;
   height: 80vh;
   width: 40vw;
+  box-shadow: 0 6px 35px rgba(5, 5, 5, 0.81);
 }
 
 .patricia {
@@ -182,6 +185,7 @@ body {
   height: 94vh;
   width: 40vw;
   margin-top: 0.7cm;
+  box-shadow: 0 6px 35px rgba(5, 5, 5, 0.81);
 
 }
 
@@ -212,6 +216,7 @@ body {
   height: 12cm;
   width: 16cm;
   margin-top: 0.7cm;
+  box-shadow: 0 6px 35px rgba(5, 5, 5, 0.81);
 }
 
 .family_protection {
@@ -222,6 +227,7 @@ body {
   margin-left: 40vh;
   height: 75vh;
   width: 30vw;
+  box-shadow: 0 6px 35px rgba(5, 5, 5, 0.81);
 }
 
 .family_paragraph {
