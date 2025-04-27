@@ -2,96 +2,111 @@
   font-family: poppins;
   src: url(Fonts/Poppins-Regular.ttf);
 }
+
 @import url("https://fonts.cdnfonts.com/css/typewriter");
-      @import url("https://fonts.cdnfonts.com/css/brominates");
-body{
+@import url("https://fonts.cdnfonts.com/css/brominates");
+
+body {
   font-family: poppins;
   background-color: rgb(230, 230, 230);
 }
-.navigation_bornacrime{
-    border: solid 2px;
-    width: 15vw;
-    height: 100vh;
-    background-color: none;
-    /* position: fixed; */
-    
-}
-.borna_crimebook{
-    display: flex;
-}
-#navigation_list{
-    list-style: none;
-    line-height: 10vh;
-    font-size: 150%;
-    
-    
-}
-#navigation_list a{
-    color: rgb(23, 23, 139);
-    text-decoration: none;
 
-    
+.navigation_bornacrime {
+  border: solid 2px;
+  width: 15vw;
+  height: 100vh;
+  background-color: none;
+  /* position: fixed; */
 
 }
-#navigation_list a:hover{
-    color:orange;
-    
+
+.borna_crimebook {
+  display: flex;
 }
-.core_issues{
-    margin-left: 1.5cm;
-    line-height: 2vh;
-    margin-top: 0.2cm;
-    list-style-type: square white;
-    font-size: 65%;
-    font-style: italic;
+
+#navigation_list {
+  list-style: none;
+  line-height: 10vh;
+  font-size: 150%;
+
 
 }
-.core_issues li{
+
+#navigation_list a {
+  color: rgb(23, 23, 139);
+  text-decoration: none;
+
+
+
+}
+
+#navigation_list a:hover {
+  color: orange;
+
+}
+
+.core_issues {
+  margin-left: 1.5cm;
+  line-height: 2vh;
+  margin-top: 0.2cm;
+  list-style-type: square white;
+  font-size: 65%;
+  font-style: italic;
+
+}
+
+.core_issues li {
   list-style: none;
   font-size: 1.5vh;
 }
-.book_img{
-   display: flex;
-   /* border: solid 1px; */
-   margin-left: 9cm;
-   width: 100%;
-    
+
+.book_img {
+  display: flex;
+  /* border: solid 1px; */
+  margin-left: 9cm;
+  width: 100%;
+
 }
-/* .noah_img{
-    margin-left: 12cm;
-    background-image:linear-gradient(0,0,0,0.5),url(./Images/review-image.jpg);
-    width: 200vw;
-    margin: auto;
-    height: 70vh;
-    background-size:auto;
-    background-repeat: no-repeat;
-} */
-.noah_img img{
-    height: 80vh;
-    width: 80vw;
-    
+
+.noah_img {
+  width: 100vh;
+  height: 80vh;
+  margin-left: 60vh;
+  background: linear-gradient(0, 0, 0, 0.5), linear-gradient(0, 0, 0, 0.5);
+  margin-top: 10vh;
 }
-.book_parag{
-    margin-left: 10cm;
-    margin-top: 2.5cm;
-    font-style: italic;
+
+.noah_img img {
+  height: 80vh;
+  width: 80vw;
+
 }
-.love_relationship{
-    display: flex;
+
+.book_parag {
+  margin-left: 10cm;
+  margin-top: 2.5cm;
+  font-style: italic;
 }
-.loveandrelationships_topic{
-    text-align: center;
-    margin-top: 3cm;
+
+.love_relationship {
+  display: flex;
 }
-.loverelationship_paragraph{
-    margin-left: 1cm;
-    margin-top: 0.5cm;
+
+.loveandrelationships_topic {
+  text-align: center;
+  margin-top: 3cm;
 }
-.loveandrelationship_image img{
-    height: 73.5vh;
-    width: 40vw;
-    margin-left:9cm ;
-    margin-top: 1cm;
+
+.loverelationship_paragraph {
+  margin-left: 1cm;
+  margin-top: 0.5cm;
+}
+
+.loveandrelationship_image img {
+  height: 73.5vh;
+  width: 40vw;
+  margin-left: 9cm;
+  margin-top: 1cm;
 }
 
 /* body {
@@ -99,18 +114,358 @@ body{
     font-family: 'Segoe UI', Arial, sans-serif;
     background: #F4F6FA;
   } */
-  .sidenav {
+.sidenav {
+  height: 100vh;
+  width: 300px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #232946;
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.06);
+}
+
+.sidenav a {
+  display: flex;
+  align-items: center;
+  padding: 16px 24px;
+  color: #EEBBC3;
+  text-decoration: none;
+  font-size: 1.2em;
+  transition: background 0.2s, color 0.2s;
+  border-left: 4px solid transparent;
+  margin-bottom: 8px;
+}
+
+.sidenav a:hover,
+.sidenav a.active {
+  background: #EEBBC3;
+  color: #232946;
+  border-left: 4px solid #232946;
+}
+
+.sidenav i {
+  margin-right: 18px;
+  font-size: 1.3em;
+  width: 24px;
+  text-align: center;
+}
+
+.feelinglikeanoutsider_heading {
+  text-align: center;
+  margin-top: 3cm;
+  font-family: poppins;
+  font-size: 3.5vh;
+}
+
+.feelinglikeanoutsider {
+  display: flex;
+  margin-left: 9cm;
+
+}
+
+.feelinglikeanoutsider_image img {
+  margin-left: 2cm;
+  margin-top: 0.5cm;
+  height: 80vh;
+  width: 40vw;
+}
+
+.patricia {
+  display: flex;
+}
+
+.patricia_images img {
+  margin-left: 9cm;
+  height: 94vh;
+  width: 40vw;
+  margin-top: 0.7cm;
+
+}
+
+.patricia_protagonist {
+  text-align: center;
+  margin-top: 3cm;
+}
+
+.patricia_parag {
+  margin-left: 2cm;
+}
+
+.identity_heading {
+  /* text-align: center; */
+  margin-top: 3cm;
+  font-size: 3.5vh;
+  margin-left: 100vh;
+}
+
+.identity {
+  display: flex;
+  margin-left: 9cm;
+  margin-top: 1.5cm;
+}
+
+.identity_image img {
+  margin-left: 3cm;
+  height: 12cm;
+  width: 16cm;
+  margin-top: 0.7cm;
+}
+
+.family_protection {
+  display: flex;
+}
+
+.family_image img {
+  margin-left: 40vh;
+  height: 75vh;
+  width: 30vw;
+}
+
+.family_paragraph {
+  margin-left: 12vh;
+  margin-top: -2vh;
+}
+
+#summary {
+  margin-top: 15vh;
+}
+
+details>summary {
+  padding: 3vh;
+  width: 50vw;
+  border-radius: 2vh;
+  margin: auto;
+  background-color: rgb(1, 1, 90);
+  border: none;
+  box-shadow: 20px 20px 40px #a5a4a4;
+  cursor: pointer;
+  text-align: center;
+  color: rgb(177, 175, 175);
+  font-family: "Typewriter", sans-serif;
+  font-weight: 500;
+  font-size: 3vh;
+}
+
+details>p {
+  background-color: rgb(196, 130, 10);
+  padding: 5vh;
+  /* margin: 2vh; */
+  box-shadow: 10px 10px 20px #a5a4a4;
+  text-align: center;
+  font-family: "Hum 521 Rm", sans-serif;
+  font-size: 16px;
+  color: rgb(59, 55, 55);
+  font-weight: bold;
+  width: 50vw;
+  margin: auto;
+  margin-top: 2vh;
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: 60px auto;
+  background-color: #ffffff;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.profile-image {
+  flex: 1 1 300px;
+  background-color: #ddd;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-details {
+  flex: 2 1 500px;
+  padding: 30px;
+}
+
+.author-name {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #03198a;
+}
+
+#Author {
+  margin-top: 25vh;
+}
+
+.book-title {
+  font-size: 1.4em;
+  font-weight: bold;
+  margin: 20px 0 10px;
+  color: #eebbc3;
+}
+
+.summary {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.author-heading {
+  text-align: center;
+  font-size: 5vh;
+  margin-left: 10vh;
+}
+
+.social-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  font-size: 1.4em;
+  transition: transform 0.2s;
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+}
+
+.social-links a .fa-twitter {
+  color: #1da1f2;
+}
+
+.social-links a .fa-facebook {
+  color: #1877f2;
+}
+
+.social-links a .fa-instagram {
+  color: #e1306c;
+}
+
+.social-links a .fa-linkedin {
+  color: #0077b5;
+}
+
+@media only screen and (max-width:750px) {
+  body {
+    font-family: poppins;
+    background-color: rgb(230, 230, 230);
+  }
+
+  .navigation_bornacrime {
+    border: solid 2px;
+    width: 15vw;
     height: 100vh;
-    width: 300px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    background: #232946;
+    background-color: none;
+    /* position: fixed; */
+
+  }
+
+  .borna_crimebook {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
-    box-shadow: 2px 0 10px rgba(0,0,0,0.06);
   }
+
+  #navigation_list {
+    list-style: none;
+    line-height: 10vh;
+    font-size: 150%;
+
+
+  }
+
+  #navigation_list a {
+    color: rgb(23, 23, 139);
+    text-decoration: none;
+
+
+
+  }
+
+  #navigation_list a:hover {
+    color: orange;
+
+  }
+
+  .core_issues {
+    margin-left: 1.5cm;
+    line-height: 2vh;
+    margin-top: 0.2cm;
+    list-style-type: square white;
+    font-size: 65%;
+    font-style: italic;
+
+  }
+
+  .core_issues li {
+    list-style: none;
+    font-size: 1.5vh;
+  }
+
+  .book_img {
+    display: flex;
+    margin-left: 9cm;
+    width: 100%;
+
+  }
+
+  .noah_img{
+    width: 50vh;
+    margin: auto;
+    /* margin-left: 20vh; */
+    height: 80vh;
+    /* margin-left: 60vh; */
+    background: linear-gradient(0, 0, 0, 0.5), linear-gradient(0, 0, 0, 0.5);
+    margin-top: 110vh;
+
+  }
+
+  .book_parag {
+    margin-left: 10cm;
+    margin-top: 2.5cm;
+    font-style: italic;
+  }
+
+  .love_relationship {
+    /* display: flex; */
+    flex-wrap: wrap;
+  }
+
+  .loveandrelationships_topic {
+    text-align: center;
+    margin-top: 3cm;
+  }
+
+  .loverelationship_paragraph {
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+  }
+
+  .loveandrelationship_image img {
+    height: 73.5vh;
+    width: 90vw;
+    margin-left: 1vh;
+    margin-top: 1cm;
+  }
+
+
+  .sidenav {
+    height: 100vh;
+    top: 0;
+    width: 56vh;
+    position: absolute;
+    /* z-index: -90; */
+    /* left: 0;
+    top: 0; */
+    background: #232946;
+    /* display: flex;
+    flex-direction: column; */
+    padding-top: 40px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.06);
+  }
+
   .sidenav a {
     display: flex;
     align-items: center;
@@ -122,88 +477,108 @@ body{
     border-left: 4px solid transparent;
     margin-bottom: 8px;
   }
-  .sidenav a:hover, .sidenav a.active {
+
+  .sidenav a:hover,
+  .sidenav a.active {
     background: #EEBBC3;
     color: #232946;
     border-left: 4px solid #232946;
   }
+
   .sidenav i {
     margin-right: 18px;
     font-size: 1.3em;
     width: 24px;
     text-align: center;
   }
-  .feelinglikeanoutsider_heading{
+
+  .feelinglikeanoutsider_heading {
     text-align: center;
     margin-top: 3cm;
     font-family: poppins;
     font-size: 3.5vh;
   }
-  .feelinglikeanoutsider{
-    display: flex;
-    margin-left: 9cm;
-    
+
+  .feelinglikeanoutsider {
+    /* display: flex; */
+    margin-left: 2.5vh;
+    flex-wrap: wrap;
+
   }
-  .feelinglikeanoutsider_image img{
-        margin-left: 2cm;
-        margin-top: 0.5cm;
-        height: 80vh;
-        width: 40vw;
+
+  .feelinglikeanoutsider_image img {
+    margin-left: 0.5vh;
+    margin-top: 0.5cm;
+    height: 60vh;
+    width: 85vw;
   }
-  .patricia{
-    display: flex;
+
+  .patricia {
+    /* display: flex; */
+    flex-wrap: wrap;
   }
-  .patricia_images img{
-    margin-left: 9cm;
-    height: 94vh;
-    width: 40vw;
+
+  .patricia_images img {
+    margin-left: 2vh;
+    height: 80vh;
+    width: 94vw;
     margin-top: 0.7cm;
 
   }
-  .patricia_protagonist{
+
+  .patricia_protagonist {
     text-align: center;
     margin-top: 3cm;
   }
-  .patricia_parag{
-    margin-left: 2cm;
+
+  .patricia_parag {
+    margin-left: 2vh;
   }
-  .identity_heading{
+
+  .identity_heading {
     /* text-align: center; */
     margin-top: 3cm;
     font-size: 3.5vh;
-   margin-left: 100vh;
+    margin-left: 10vh;
   }
-  .identity{
-    display: flex;
-    margin-left: 9cm;
+
+  .identity {
+    /* display: flex; */
+    flex-wrap: wrap;
+    margin-left: 2vh;
     margin-top: 1.5cm;
   }
-  .identity_image img{
-    margin-left: 3cm;
-    height: 12cm ;
-    width: 16cm;
+
+  .identity_image img {
+    margin-left: 2vh;
+    height: 55vh;
+    width: 85vw;
     margin-top: 0.7cm;
   }
 
-  .family_protection{
-    display: flex;
+  .family_protection {
+    /* display: flex; */
+    flex-wrap: wrap;
   }
-.family_image img{
-  margin-left: 40vh;
-  height: 75vh;
-  width: 30vw;
-}
-.family_paragraph{
-  margin-left: 12vh;
-  margin-top: -2vh;
-}
 
-  #summary{
+  .family_image img {
+    margin-left: 2vh;
+    height: 75vh;
+    width: 90vw;
+  }
+
+  .family_paragraph {
+    margin-left: 1vh;
+    margin-top: -2vh;
+  }
+
+  #summary {
     margin-top: 15vh;
   }
-  details > summary {
-    padding: 3vh;
-    width: 50vw;
+
+  details>summary {
+    padding: 4vh;
+    width: 60vw;
     border-radius: 2vh;
     margin: auto;
     background-color: rgb(1, 1, 90);
@@ -214,10 +589,10 @@ body{
     color: rgb(177, 175, 175);
     font-family: "Typewriter", sans-serif;
     font-weight: 500;
-    font-size: 3vh;
+    font-size: 2.8vh;
   }
 
-  details > p {
+  details>p {
     background-color: rgb(196, 130, 10);
     padding: 5vh;
     /* margin: 2vh; */
@@ -231,6 +606,7 @@ body{
     margin: auto;
     margin-top: 2vh;
   }
+
   .profile-container {
     max-width: 900px;
     margin: 60px auto;
@@ -241,60 +617,774 @@ body{
     display: flex;
     flex-wrap: wrap;
   }
+
   .profile-image {
     flex: 1 1 300px;
     background-color: #ddd;
   }
+
   .profile-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
+
   .profile-details {
     flex: 2 1 500px;
     padding: 30px;
   }
+
   .author-name {
     font-size: 2em;
     margin-bottom: 10px;
     color: #03198a;
   }
-  #Author{
-  margin-top: 25vh;
+
+  #Author {
+    margin-top: 25vh;
   }
+
   .book-title {
     font-size: 1.4em;
     font-weight: bold;
     margin: 20px 0 10px;
     color: #eebbc3;
   }
+
   .summary {
     margin-bottom: 20px;
     line-height: 1.6;
   }
-  .author-heading{
+
+  .author-heading {
     text-align: center;
     font-size: 5vh;
     margin-left: 10vh;
   }
+
   .social-links a {
     margin-right: 15px;
     text-decoration: none;
     font-size: 1.4em;
     transition: transform 0.2s;
   }
+
   .social-links a:hover {
     transform: scale(1.2);
   }
+
   .social-links a .fa-twitter {
     color: #1da1f2;
   }
+
   .social-links a .fa-facebook {
     color: #1877f2;
   }
+
   .social-links a .fa-instagram {
     color: #e1306c;
   }
+
   .social-links a .fa-linkedin {
     color: #0077b5;
   }
+
+}
+
+@media only screen and (min-width:751px) and (max-width:999px) {
+  body {
+    font-family: poppins;
+    background-color: rgb(230, 230, 230);
+  }
+
+  .navigation_bornacrime {
+    border: solid 2px;
+    width: 15vw;
+    height: 100vh;
+    background-color: none;
+    /* position: fixed; */
+
+  }
+
+  .borna_crimebook {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navigation_list {
+    list-style: none;
+    line-height: 10vh;
+    font-size: 150%;
+
+
+  }
+
+  #navigation_list a {
+    color: rgb(23, 23, 139);
+    text-decoration: none;
+
+
+
+  }
+
+  #navigation_list a:hover {
+    color: orange;
+
+  }
+
+  .core_issues {
+    margin-left: 1.5cm;
+    line-height: 2vh;
+    margin-top: 0.2cm;
+    list-style-type: square white;
+    font-size: 65%;
+    font-style: italic;
+
+  }
+
+  .core_issues li {
+    list-style: none;
+    font-size: 1.5vh;
+  }
+
+  .book_img {
+    display: flex;
+    margin-left: 9cm;
+    width: 100%;
+
+  }
+
+  .noah_img{
+    width: 80vh;
+    margin: auto;
+    /* margin-left: 20vh; */
+    height: 80vh;
+    /* margin-left: 60vh; */
+    background: linear-gradient(0, 0, 0, 0.5), linear-gradient(0, 0, 0, 0.5);
+    margin-top: 110vh;
+
+  }
+
+  .book_parag {
+    margin-left: 10cm;
+    margin-top: 2.5cm;
+    font-style: italic;
+  }
+
+  .love_relationship {
+    /* display: flex; */
+    flex-wrap: wrap;
+  }
+
+  .loveandrelationships_topic {
+    text-align: center;
+    margin-top: 3cm;
+  }
+
+  .loverelationship_paragraph {
+    margin-left: 1cm;
+    margin-top: 0.5cm;
+  }
+
+  .loveandrelationship_image img {
+    height: 73.5vh;
+    width: 90vw;
+    margin-left: 1vh;
+    margin-top: 1cm;
+  }
+
+
+  .sidenav {
+    height: 100vh;
+    top: 0;
+    width: 56vh;
+    position: absolute;
+    /* z-index: -90; */
+    /* left: 0;
+    top: 0; */
+    background: #232946;
+    /* display: flex;
+    flex-direction: column; */
+    padding-top: 40px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.06);
+  }
+
+  .sidenav a {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    color: #EEBBC3;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background 0.2s, color 0.2s;
+    border-left: 4px solid transparent;
+    margin-bottom: 8px;
+  }
+
+  .sidenav a:hover,
+  .sidenav a.active {
+    background: #EEBBC3;
+    color: #232946;
+    border-left: 4px solid #232946;
+  }
+
+  .sidenav i {
+    margin-right: 18px;
+    font-size: 1.3em;
+    width: 24px;
+    text-align: center;
+  }
+
+  .feelinglikeanoutsider_heading {
+    text-align: center;
+    margin-top: 3cm;
+    font-family: poppins;
+    font-size: 3.5vh;
+  }
+
+  .feelinglikeanoutsider {
+    /* display: flex; */
+    margin-left: 2.5vh;
+    flex-wrap: wrap;
+
+  }
+
+  .feelinglikeanoutsider_image img {
+    margin-left: 0.5vh;
+    margin-top: 0.5cm;
+    height: 60vh;
+    width: 85vw;
+  }
+
+  .patricia {
+    /* display: flex; */
+    flex-wrap: wrap;
+  }
+
+  .patricia_images img {
+    margin-left: 2vh;
+    height: 80vh;
+    width: 94vw;
+    margin-top: 0.7cm;
+
+  }
+
+  .patricia_protagonist {
+    text-align: center;
+    margin-top: 3cm;
+  }
+
+  .patricia_parag {
+    margin-left: 2vh;
+  }
+
+  .identity_heading {
+    /* text-align: center; */
+    margin-top: 3cm;
+    font-size: 3.5vh;
+    margin-left: 10vh;
+  }
+
+  .identity {
+    /* display: flex; */
+    flex-wrap: wrap;
+    margin-left: 2vh;
+    margin-top: 1.5cm;
+  }
+
+  .identity_image img {
+    margin-left: 2vh;
+    height: 55vh;
+    width: 85vw;
+    margin-top: 0.7cm;
+  }
+.identity-paragraph p{
+ font-size: 1.90vh;
+}
+  .family_protection {
+    /* display: flex; */
+    flex-wrap: wrap;
+  }
+
+  .family_image img {
+    margin-left: 2vh;
+    height: 75vh;
+    width: 90vw;
+  }
+
+  .family_paragraph {
+    margin-left: 1vh;
+    margin-top: -2vh;
+  }
+
+  #summary {
+    margin-top: 15vh;
+  }
+
+  details>summary {
+    padding: 4vh;
+    width: 60vw;
+    border-radius: 2vh;
+    margin: auto;
+    background-color: rgb(1, 1, 90);
+    border: none;
+    box-shadow: 20px 20px 40px #a5a4a4;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(177, 175, 175);
+    font-family: "Typewriter", sans-serif;
+    font-weight: 500;
+    font-size: 2.8vh;
+  }
+
+  details>p {
+    background-color: rgb(196, 130, 10);
+    padding: 5vh;
+    /* margin: 2vh; */
+    box-shadow: 10px 10px 20px #a5a4a4;
+    text-align: center;
+    font-family: "Hum 521 Rm", sans-serif;
+    font-size: 16px;
+    color: rgb(59, 55, 55);
+    font-weight: bold;
+    width: 50vw;
+    margin: auto;
+    margin-top: 2vh;
+  }
+
+  .profile-container {
+    max-width: 900px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .profile-image {
+    flex: 1 1 300px;
+    background-color: #ddd;
+  }
+
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .profile-details {
+    flex: 2 1 500px;
+    padding: 30px;
+  }
+
+  .author-name {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #03198a;
+  }
+
+  #Author {
+    margin-top: 25vh;
+  }
+
+  .book-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    color: #eebbc3;
+  }
+
+  .summary {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .author-heading {
+    text-align: center;
+    font-size: 5vh;
+    margin-left: 10vh;
+  }
+
+  .social-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 1.4em;
+    transition: transform 0.2s;
+  }
+
+  .social-links a:hover {
+    transform: scale(1.2);
+  }
+
+  .social-links a .fa-twitter {
+    color: #1da1f2;
+  }
+
+  .social-links a .fa-facebook {
+    color: #1877f2;
+  }
+
+  .social-links a .fa-instagram {
+    color: #e1306c;
+  }
+
+  .social-links a .fa-linkedin {
+    color: #0077b5;
+  }
+
+}
+
+@media only screen and (min-width:1000px) and (max-width:1300px){
+  body {
+    font-family: poppins;
+    background-color: rgb(230, 230, 230);
+  }
+
+  .navigation_bornacrime {
+    border: solid 2px;
+    width: 15vw;
+    height: 100vh;
+    background-color: none;
+    /* position: fixed; */
+
+  }
+
+  .borna_crimebook {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navigation_list {
+    list-style: none;
+    line-height: 10vh;
+    font-size: 150%;
+
+
+  }
+
+  #navigation_list a {
+    color: rgb(23, 23, 139);
+    text-decoration: none;
+
+
+
+  }
+
+  #navigation_list a:hover {
+    color: orange;
+
+  }
+
+  .core_issues {
+    margin-left: 1.5cm;
+    line-height: 2vh;
+    margin-top: 0.2cm;
+    list-style-type: square white;
+    font-size: 65%;
+    font-style: italic;
+
+  }
+
+  .core_issues li {
+    list-style: none;
+    font-size: 1.5vh;
+  }
+
+  .book_img {
+    display: flex;
+    margin-left: 9cm;
+    width: 100%;
+
+  }
+
+  .noah_img{
+    width: 80vh;
+    margin: auto;
+    /* margin-left: 20vh; */
+    height: 80vh;
+    /* margin-left: 60vh; */
+    background: linear-gradient(0, 0, 0, 0.5), linear-gradient(0, 0, 0, 0.5);
+    margin-top: 110vh;
+
+  }
+
+  .book_parag {
+    margin-left: 10cm;
+    margin-top: 2.5cm;
+    font-style: italic;
+  }
+
+  .love_relationship {
+    /* display: flex; */
+    flex-wrap: wrap;
+  }
+
+  .loveandrelationships_topic {
+    text-align: center;
+    margin-top: 3cm;
+  }
+
+  .loverelationship_paragraph {
+    margin-left: 14vh;
+    margin-top: 0.5cm;
+  }
+
+  .loveandrelationship_image img {
+    height: 73.5vh;
+    width: 90vw;
+    margin-left: 1vh;
+    margin-top: 1cm;
+  }
+
+
+  .sidenav {
+    height: 100vh;
+    top: 0;
+    width: 56vh;
+    position: absolute;
+    /* z-index: -90; */
+    /* left: 0;
+    top: 0; */
+    background: #232946;
+    /* display: flex;
+    flex-direction: column; */
+    padding-top: 40px;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.06);
+  }
+
+  .sidenav a {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    color: #EEBBC3;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background 0.2s, color 0.2s;
+    border-left: 4px solid transparent;
+    margin-bottom: 8px;
+  }
+
+  .sidenav a:hover,
+  .sidenav a.active {
+    background: #EEBBC3;
+    color: #232946;
+    border-left: 4px solid #232946;
+  }
+
+  .sidenav i {
+    margin-right: 18px;
+    font-size: 1.3em;
+    width: 24px;
+    text-align: center;
+  }
+
+  .feelinglikeanoutsider_heading {
+    text-align: center;
+    margin-top: 3cm;
+    font-family: poppins;
+    font-size: 3.5vh;
+  }
+
+  .feelinglikeanoutsider {
+    /* display: flex; */
+    margin-left: 2.5vh;
+    flex-wrap: wrap;
+
+  }
+  .feelinglikeanoutsider_parag{
+    margin-left: 12vh;
+  }
+
+  .feelinglikeanoutsider_image img {
+    margin-left: 0.5vh;
+    margin-top: 0.5cm;
+    height: 73vh;
+    width: 93vw;
+  }
+
+  .patricia {
+    /* display: flex; */
+    flex-wrap: wrap;
+  }
+
+  .patricia_images img {
+    margin-left: 2vh;
+    height: 80vh;
+    width: 94vw;
+    margin-top: 0.7cm;
+
+  }
+
+  .patricia_protagonist {
+    text-align: center;
+    margin-top: 3cm;
+  }
+
+  .patricia_parag {
+    margin-left: 12vh;
+  }
+
+  .identity_heading {
+    /* text-align: center; */
+    margin-top: 3cm;
+    font-size: 3.5vh;
+    margin-left: 23vh;
+  }
+
+  .identity {
+    /* display: flex; */
+    flex-wrap: wrap;
+    margin-left: 2vh;
+    margin-top: 1.5cm;
+  }
+
+  .identity_image img {
+    margin-left: 2vh;
+    height: 55vh;
+    width: 85vw;
+    margin-top: 0.7cm;
+  }
+.identity-paragraph p{
+ font-size: 2vh;
+ margin-left: 10vh;
+}
+  .family_protection {
+    /* display: flex; */
+    flex-wrap: wrap;
+  }
+
+  .family_image img {
+    margin-left: 5vh;
+    height: 80vh;
+    width: 85vw;
+  }
+
+  .family_paragraph {
+    margin-left: 12vh;
+    margin-top: -2vh;
+  }
+
+  #summary {
+    margin-top: 15vh;
+  }
+
+  details>summary {
+    padding: 4vh;
+    width: 60vw;
+    border-radius: 2vh;
+    margin: auto;
+    background-color: rgb(1, 1, 90);
+    border: none;
+    box-shadow: 20px 20px 40px #a5a4a4;
+    cursor: pointer;
+    text-align: center;
+    color: rgb(177, 175, 175);
+    font-family: "Typewriter", sans-serif;
+    font-weight: 500;
+    font-size: 2.8vh;
+  }
+
+  details>p {
+    background-color: rgb(196, 130, 10);
+    padding: 5vh;
+    /* margin: 2vh; */
+    box-shadow: 10px 10px 20px #a5a4a4;
+    text-align: center;
+    font-family: "Hum 521 Rm", sans-serif;
+    font-size: 16px;
+    color: rgb(59, 55, 55);
+    font-weight: bold;
+    width: 50vw;
+    margin: auto;
+    margin-top: 2vh;
+  }
+
+  .profile-container {
+    max-width: 900px;
+    margin: 60px auto;
+    background-color: #ffffff;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .profile-image {
+    flex: 1 1 300px;
+    background-color: #ddd;
+  }
+
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .profile-details {
+    flex: 2 1 500px;
+    padding: 30px;
+  }
+
+  .author-name {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #03198a;
+  }
+
+  #Author {
+    margin-top: 25vh;
+  }
+
+  .book-title {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin: 20px 0 10px;
+    color: #eebbc3;
+  }
+
+  .summary {
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .author-heading {
+    text-align: center;
+    font-size: 5vh;
+    margin-left: 10vh;
+  }
+
+  .social-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    font-size: 1.4em;
+    transition: transform 0.2s;
+  }
+
+  .social-links a:hover {
+    transform: scale(1.2);
+  }
+
+  .social-links a .fa-twitter {
+    color: #1da1f2;
+  }
+
+  .social-links a .fa-facebook {
+    color: #1877f2;
+  }
+
+  .social-links a .fa-instagram {
+    color: #e1306c;
+  }
+
+  .social-links a .fa-linkedin {
+    color: #0077b5;
+  }
+
+}
