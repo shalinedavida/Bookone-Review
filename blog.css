@@ -24,8 +24,30 @@ border-color: blue;
     border-bottom: 5px solid blue;
     height: 100px;
 }
+.book{
+    display: flex;
+    gap:10%;
+    margin-left: 13%;
+    margin-top: 5%;
+img{
+    height:20vh;
+        width:15%;
+
+}
+}
+
+#book-cover{
+    height: 20vh;
+    width:10%;
+}
+
+
 .introduction{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(shelf\ 2.jpeg);
+    display: inline;
+}
+
+.title{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/shelf\ 2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
 /* background-color: rgba(244,215,185,255); */
@@ -41,16 +63,26 @@ border-color: blue;
     }
     img{
         height:20vh;
-        width:20%
+        width:20%;
         margin-right:20%;
         /* transform: rotate(5deg); */
        
     }
 }
-.contents{
+
+.details{
     display:inline;
-    margin-top: 1%;
-    margin-left: 5%;
+        font-size: 20px;
+        color:black;
+       
+    
+   p{
+    width: 60%;
+    margin-top: 3%;
+    text-align: center;
+    margin-left: 20%;
+   } 
+   
 }
 
 .reflection{
@@ -59,37 +91,41 @@ border-color: blue;
 
 .reflection-contents{
     display: inline;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.7;
     width: 40%;
     margin-left: 10%;
     margin-top: 3%;
+    h1{
+        font-size: 60px;
+    }
 
 }
 
-#qoute{
-    font-size: 30px;
+#quote{
+    font-size: 25px;
+    color: rgb(46, 46, 153);
 }
 
 #left-icon {
-    color: black;
+    color: rgb(46, 46, 153);
     font-size: 20px;
     right: 90%;
-    top: 50vh;
+    top: 78vh;
     position: absolute;
   }
 
   #right-icon{
-    color: black;
+    color: rgb(46, 46, 153);
     font-size: 20px;
-    left: 35%;
-   top:52vh;
+    left: 33.5%;
+   top:88vh;
     position: absolute;
   }
 
 .image img{
-    width: 70%;
+    width: 90%;
     height: 50vh;
     margin-left: 20%;
-    margin-top: 20%;
+    margin-top: 45%;
 }
