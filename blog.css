@@ -24,33 +24,46 @@ border-color: blue;
     border-bottom: 5px solid blue;
     height: 100px;
 }
+.book img{
+    height:20vh;
+        width:15%;
+   /* margin-left:50%; 
+   margin-top: 15%; */
+   /* transform:rotate(5deg);   */
+}
+
 .introduction{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(shelf\ 2.jpeg);
+    display: inline;
+}
+
+.title{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./images/shelf\ 2.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-/* background-color: rgba(244,215,185,255); */
-   overflow: hidden;
-   margin-top: -1%;
-    width:100%;
-    display: flex;
-    gap:25%;
-    p{
-        font-size: 20px;
-        color:white;
-        font-weight: lighter;
-    }
-    img{
-        height:20vh;
-        width:20%
-        margin-right:20%;
-        /* transform: rotate(5deg); */
-       
-    }
+    overflow: hidden;
+    margin-top: -1%;
+     width:100%;
+     display: flex;
+     gap:25%;
+
+     h1{
+    color:white;
+        text-align: center;
+        font-size: 60px;
+        margin-left: 30%;
+     }
 }
-.contents{
+
+.details{
     display:inline;
-    margin-top: 1%;
-    margin-left: 5%;
+        font-size: 20px;
+        color:black;
+        font-weight: lighter;
+        margin-top: 4%;
+    margin-left: 15%;
+    width: 40%;
+    text-align: center;
+   
 }
 
 .reflection{
@@ -64,11 +77,14 @@ border-color: blue;
     width: 40%;
     margin-left: 10%;
     margin-top: 3%;
+    h1{
+        font-size: 60px;
+    }
 
 }
 
-#qoute{
-    font-size: 30px;
+#quote{
+    font-size: 25px;
 }
 
 #left-icon {
@@ -88,8 +104,8 @@ border-color: blue;
   }
 
 .image img{
-    width: 70%;
+    width: 90%;
     height: 50vh;
     margin-left: 20%;
-    margin-top: 20%;
+    margin-top: 25%;
 }
