@@ -1,0 +1,73 @@
+@font-face{
+    font-family: poppins;
+    src:url(poppins/Poppins-Regular.ttf)
+}
+
+body{
+    font-family: poppins;
+}
+
+.books{
+  background-image:url(background1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+    
+   
+}
+
+.two-books{
+    display: flex;
+    gap:10vw;
+    margin-left: 22%;
+   
+}
+
+.book-one{
+    display: inline;
+    font-size: 35px;
+    line-height: 0.25;
+    text-align: center;
+    p{
+        margin-left: 15%;
+    }
+img{
+    height:60vh;
+    width: 110%;
+    border: solid 13px rgb(93, 87, 146);  
+    margin-top: 18vh;
+    border-radius: 0.8rem; 
+    margin-bottom: 5%;
+}
+}
+
+.book-two img:hover{
+    transform: scale(1.05);
+    border:none;
+}
+.book-one img:hover{
+    transform: scale(1.05);
+    border:none
+}
+
+.book-two{
+    display: inline;
+    font-size: 35px;
+    text-align: center;
+    line-height: 0.25;
+    p{
+        margin-left: 15%; 
+        width: 100%;
+    }
+img{
+    width: 120%;
+    height: 60vh;
+    border: solid 13px rgb(238, 121, 131);
+    margin-top: 18vh;
+    border-radius: 0.8rem;
+    margin-bottom: 5%;
+
+}
+}
+
+
