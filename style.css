@@ -13,6 +13,27 @@
     }
    
 }
+.buttons a{
+    position: relative;
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(190, 92, 92, 0.822);
+    padding: 2% 4%;
+    border-radius: 20px;
+    box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
+    margin-top: 2vh;
+    margin-bottom: 5vh; 
+    /* height: 5vh; */
+
+}
+.buttons{
+   
+    display: flex;
+    margin-left: 30vw;
+    gap: 13vw;
+}
 body{
     
     background-size: cover;
