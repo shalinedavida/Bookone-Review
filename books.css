@@ -23,7 +23,7 @@ body {
 .two-books {
     display: flex;
     gap: 17vw;
-    margin-left: 16%;
+    margin-left: 20%;
 
 
 }
@@ -40,10 +40,9 @@ body {
     }
 
     img {
-        height: 70vh;
+        height: 60vh;
         width: 110%;
-        /* border: solid 13px rgb(93, 87, 146); */
-        margin-top: 2vh;
+        margin-top: 10vh;
         border-radius: 0.8rem;
         margin-bottom: 5%;
         transition: transform 0.3s ease-in-out;
@@ -72,10 +71,9 @@ body {
     }
 
     img {
-        width: 120%;
-        height: 70vh;
-        /* border: solid 13px rgb(238, 121, 131); */
-        margin-top: 2vh;
+        width: 110%;
+        height: 60vh;
+        margin-top: 10vh;
         border-radius: 0.8rem;
         margin-bottom: 5%;
         transition: transform 0.3s ease-in-out;
@@ -98,8 +96,9 @@ body {
 .buttons{
    
     display: flex;
-    margin-left: 33vw;
-    gap: 13vw;
+    margin-left: 7vw;
+    margin-top: 2%;
+    gap: 67vw;
 }
 
 @media only screen and (max-width:750px) {

@@ -55,14 +55,14 @@ img{
 .title h1{
     display: 40vw;
        color: white;
-       margin-left: 28vw;
+       margin-left: 31vw;
        font-size: 4em;
        margin-top: 5vh;
    }
 
 .details{
     display:inline;
-        font-size: 20px;
+        font-size: 25px;
         color:black;
        
     
@@ -121,7 +121,7 @@ a{
 .button{
     display: flex;
     margin-top: 5vh;
-    margin-left: 6vw;
+    margin-left: 7vw;
     gap:70vw;
 }
 
