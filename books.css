@@ -1,55 +1,42 @@
 @font-face {
     font-family: poppins;
     src: url(poppins/Poppins-Regular.ttf)
- }
- 
- 
- body {
+}
+
+
+body {
     font-family: poppins;
-    margin-top: -0%;
-    margin-left: -0%;
-    margin-right: -0%;
     overflow: hidden;
- }
- 
- 
- .books {
+}
+
+
+.books {
     background-image: url(images/background1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
- 
- 
- 
- 
- }
- 
- 
- .two-books {
+}
+
+
+.two-books {
     display: flex;
     gap: 17vw;
     margin-left: 20%;
- 
- 
- 
- 
- }
- 
- 
- 
- 
- .book-one {
+
+}
+
+.book-one {
     display: inline;
     font-size: 35px;
     line-height: 0.25;
     text-align: center;
- 
- 
+
+
     p {
         margin-left: 15%;
     }
- 
- 
+
+
     img {
         height: 60vh;
         width: 110%;
@@ -58,34 +45,32 @@
         margin-bottom: 5%;
         transition: transform 0.3s ease-in-out;
     }
- }
- 
- 
- .book-two img:hover {
+}
+
+
+.book-two img:hover {
     transform: scale(1.1);
-    border: none;
- }
- 
- 
- .book-one img:hover {
+}
+
+
+.book-one img:hover {
     transform: scale(1.1);
-    border: none
- }
- 
- 
- .book-two {
+}
+
+
+.book-two {
     display: inline;
     font-size: 35px;
     text-align: center;
     line-height: 0.25;
- 
- 
+
+
     p {
         margin-left: 15%;
         width: 100%;
     }
- 
- 
+
+
     img {
         width: 110%;
         height: 60vh;
@@ -93,12 +78,13 @@
         border-radius: 0.8rem;
         margin-bottom: 5%;
         transition: transform 0.3s ease-in-out;
- 
- 
+
+
     }
-   
- }
- .buttons a{
+
+}
+
+.buttons a {
     position: relative;
     color: black;
     font-size: 1.5em;
@@ -108,38 +94,39 @@
     padding: 2% 4%;
     border-radius: 20px;
     box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
- 
- 
- }
- .buttons{
-  
+
+
+}
+
+.buttons {
+
     display: flex;
     margin-left: 35vw;
     margin-top: 2%;
     gap: 13vw;
- }
- 
- 
- @media only screen and (max-width:750px) {
+}
+
+
+@media only screen and (max-width:750px) {
     body {
-      overflow: visible;
-      overflow-x: hidden;
+        overflow: visible;
+        overflow-x: hidden;
     }
- 
- 
+
+
     .books {
         background-image: url(images/background1.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        height: 170vh;
+        height: 130vh;
         width: 100%;
- 
- 
- 
- 
+
+
+
+
     }
 
-    .buttons a{
+    .buttons a {
         position: relative;
         color: black;
         font-size: 15px;
@@ -147,237 +134,234 @@
         border: none;
         background-color: rgba(190, 92, 92, 0.822);
         padding: 2% 4%;
-    
-     
-     
-     }
-     .buttons{
-      
+
+
+
+    }
+
+    .buttons {
+
         display: flex;
-        margin-left: 15vw;
-        margin-top: -140%;
+        margin-left: 12vw;
+        margin-top: 5%;
         gap: 40vw;
-     }
- 
- 
+    }
+
+
     .two-books {
         flex-direction: column;
         margin-left: 22%;
- 
- 
+
+
     }
- 
- 
+
+
     .book-one {
         display: inline;
         font-size: 20px;
         line-height: 0.25;
- 
- 
+
+
         p {
             margin-left: -25%;
-          
+
         }
- 
- 
+
+
         img {
-            height: 50vh;
-            width: 80%;
+            height: 40vh;
+            width: 60%;
+            border-radius: 0.8rem;
+            margin-left: -30%;
+          margin-bottom: 2%;
+        }
+    }
+
+
+
+    .book-two {
+        display: inline;
+        font-size: 20px;
+        line-height: 0.25;
+
+
+
+        p {
+            margin-left: -13%;
+            width: 100%;
+
+
+        }
+
+
+        img {
+            width: 60%;
+            height: 40vh;
+            margin-top: 9vh;
+            border-radius: 0.8rem;
+            margin-top: -7%;
+            margin-left: -30%;
+
+
+
+
+
+        }
+    }
+
+
+}
+
+
+@media only screen and (min-width:751px) and (max-width:999px) {
+
+
+    .body {
+        overflow-x: hidden;
+    }
+
+
+    .books {
+        background-image: url(images/background1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 170vh;
+        width: 100%;
+        padding-top: 10%;
+
+
+    }
+
+    .two-books {
+        display: flex;
+        margin-left: 12%;
+        margin-top: 3%;
+
+    }
+
+    .book-one {
+        display: inline;
+        font-size: 25px;
+        line-height: 0.25;
+
+        p {
+            margin-left: -25%;
+        }
+
+        img {
+            height: 40vh;
+            width: 100%;
             border-radius: 0.8rem;
             margin-left: -30%;
             margin-bottom: 4%;
         }
     }
- 
- 
- 
+
     .book-two {
         display: inline;
-        font-size: 20px;
+        font-size: 25px;
         line-height: 0.25;
-    
- 
- 
+
         p {
             margin-left: -13%;
             width: 100%;
- 
- 
-        }
- 
- 
-        img {
-            width: 80%;
-            height: 50vh;
-            margin-top: 9vh;
-            border-radius: 0.8rem;
-            margin-bottom: 5%;
-            margin-left: -30%;
-            
- 
- 
- 
- 
-        }
-    }
- 
- 
- }
- 
- 
-    @media only screen and (min-width:751px) and (max-width:999px) {
- 
- 
-        .body {
-            overflow-x: hidden;
-        }
- 
- 
-        .books {
-            background-image: url(images/background1.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 170vh;
-            width: 100%;
-            padding-top: 10%;
-   
-   
-        }
-   
-        .two-books {
-          display: flex;
-            margin-left: 12%;
-            margin-top: 3%;
-   
-        }
-   
-        .book-one {
-            display: inline;
-            font-size: 25px;
-            line-height: 0.25;
-   
-            p {
-                margin-left: -25%;
-            }
-   
-            img {
-                height: 40vh;
-                width: 100%;
-                border-radius: 0.8rem;
-                margin-left: -30%;
-                margin-bottom: 4%;
-            }
-        }
-   
-        .book-two {
-            display: inline;
-            font-size: 25px;
-            line-height: 0.25;
-   
-            p {
-                margin-left: -13%;
-                width: 100%;
-   
-            }
-   
-            img {
-                width: 100%;
-                height: 40vh;
-                border-radius: 0.8rem;
-                margin-bottom: 4%;
-                margin-left: -30%;
-   
-   
-            }
-        }
-   
-    }
- 
- 
-    @media only screen and (min-width:1000px) and (max-width:1300px){
- 
- 
-        .body {
-            overflow: hidden;
-        }
- 
-        .buttons{
-            gap:50%;
-            margin-top: 10%;
-            margin-left: 13%;
-            a{
-                font-size: 40px;
-            }
-        
-        }
- 
-        .books {
-            background-image: url(images/background1.jpg);
-            background-repeat: no-repeat;
-            background-size: cover;
-            height: 170vh;
-            width: 100%;
-            padding-top: 10%;
-   
-   
-        }
-   
-        .two-books {
-          display: flex;
-            margin-left: 12%;
-            margin-top: 3%;
-            margin-top: 3%;
-   
-        }
-   
-        .book-one {
-            display: inline;
-            font-size: 50px;
-            line-height: 0.25;
-   
-            p {
-                margin-left: -25%;
-            }
-   
-            img {
-                height: 40vh;
-                width: 110%;
-                border-radius: 0.8rem;
-                margin-left: -30%;
-                margin-bottom: 4%;
-            }
-        }
-   
-        .book-two {
-            display: inline;
-            font-size: 50px;
-            line-height: 0.25;
-            margin-left: -5%;
 
-           
-   
-            p {
-                margin-left: -13%;
-                width: 110%;
-    
-   
-            }
-   
-            img {
-                width: 100%;
-                height: 40vh;
-                border-radius: 0.8rem;
-                margin-bottom: 4%;
-                margin-left: -30%;
-   
-   
-            }
         }
- 
- 
+
+        img {
+            width: 100%;
+            height: 40vh;
+            border-radius: 0.8rem;
+            margin-bottom: 4%;
+            margin-left: -30%;
+
+
+        }
     }
- 
- 
- 
- 
- 
+
+}
+
+
+@media only screen and (min-width:1000px) and (max-width:1300px) {
+
+
+    .body {
+        overflow: hidden;
+    }
+
+    .buttons {
+        gap: 50%;
+        margin-top: 10%;
+        margin-left: 13%;
+
+        a {
+            font-size: 40px;
+        }
+
+    }
+
+    .books {
+        background-image: url(images/background1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 170vh;
+        width: 100%;
+        padding-top: 10%;
+
+
+    }
+
+    .two-books {
+        display: flex;
+        margin-left: 12%;
+        margin-top: 3%;
+        margin-top: 3%;
+
+    }
+
+    .book-one {
+        display: inline;
+        font-size: 50px;
+        line-height: 0.25;
+
+        p {
+            margin-left: -25%;
+        }
+
+        img {
+            height: 40vh;
+            width: 110%;
+            border-radius: 0.8rem;
+            margin-left: -30%;
+            margin-bottom: 4%;
+        }
+    }
+
+    .book-two {
+        display: inline;
+        font-size: 50px;
+        line-height: 0.25;
+        margin-left: -5%;
+
+
+
+        p {
+            margin-left: -13%;
+            width: 110%;
+
+
+        }
+
+        img {
+            width: 100%;
+            height: 40vh;
+            border-radius: 0.8rem;
+            margin-bottom: 4%;
+            margin-left: -30%;
+
+
+        }
+    }
+
+
+}
