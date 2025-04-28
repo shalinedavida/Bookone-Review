@@ -1,73 +1,315 @@
-@font-face{
+@font-face {
     font-family: poppins;
-    src:url(poppins/Poppins-Regular.ttf)
+    src: url(poppins/Poppins-Regular.ttf)
 }
 
-body{
+body {
     font-family: poppins;
+    margin-top: -0%;
+    margin-left: -0%;
+    margin-right: -0%;
+    overflow: hidden;
 }
 
-.books{
-  background-image:url(images/background1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100vh;
-    
-   
+.books {
+    background-image: url(images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+
 }
 
-.two-books{
+.two-books {
     display: flex;
-    gap:10vw;
-    margin-left: 22%;
-   
+    gap: 17vw;
+    margin-left: 16%;
+
+
 }
 
-.book-one{
+
+.book-one {
     display: inline;
     font-size: 35px;
     line-height: 0.25;
     text-align: center;
-    p{
+
+    p {
         margin-left: 15%;
     }
-img{
-    height:60vh;
-    width: 110%;
-    border: solid 13px rgb(93, 87, 146);  
-    margin-top: 18vh;
-    border-radius: 0.8rem; 
-    margin-bottom: 5%;
-}
+
+    img {
+        height: 70vh;
+        width: 110%;
+        /* border: solid 13px rgb(93, 87, 146); */
+        margin-top: 2vh;
+        border-radius: 0.8rem;
+        margin-bottom: 5%;
+        transition: transform 0.3s ease-in-out;
+    }
 }
 
-.book-two img:hover{
-    transform: scale(1.05);
-    border:none;
-}
-.book-one img:hover{
-    transform: scale(1.05);
-    border:none
+.book-two img:hover {
+    transform: scale(1.1);
+    border: none;
 }
 
-.book-two{
+.book-one img:hover {
+    transform: scale(1.1);
+    border: none
+}
+
+.book-two {
     display: inline;
     font-size: 35px;
     text-align: center;
     line-height: 0.25;
-    p{
-        margin-left: 15%; 
+
+    p {
+        margin-left: 15%;
         width: 100%;
     }
-img{
-    width: 120%;
-    height: 60vh;
-    border: solid 13px rgb(238, 121, 131);
-    margin-top: 18vh;
-    border-radius: 0.8rem;
-    margin-bottom: 5%;
+
+    img {
+        width: 120%;
+        height: 70vh;
+        /* border: solid 13px rgb(238, 121, 131); */
+        margin-top: 2vh;
+        border-radius: 0.8rem;
+        margin-bottom: 5%;
+        transition: transform 0.3s ease-in-out;
+
+    }
+    
+}
+.buttons a{
+    position: relative;
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+    border: none;
+    background-color: rgba(190, 92, 92, 0.822);
+    padding: 2% 4%;
+    border-radius: 20px;
+    box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
 
 }
+.buttons{
+   
+    display: flex;
+    margin-left: 33vw;
+    gap: 13vw;
 }
 
+@media only screen and (max-width:750px) {
+    .body {
+        overflow: hidden;
+    }
 
+    .books {
+        background-image: url(images/background1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 170vh;
+        width: 100%;
+
+
+    }
+
+    .two-books {
+        flex-direction: column;
+        margin-left: 22%;
+
+    }
+
+    .book-one {
+        display: inline;
+        font-size: 20px;
+        line-height: 0.25;
+
+        p {
+            margin-left: -25%;
+           
+        }
+
+        img {
+            height: 50vh;
+            width: 100%;
+            border-radius: 0.8rem;
+            margin-left: -30%;
+            margin-bottom: 4%;
+        }
+    }
+
+    .book-two img:hover {
+        transform: scale(1.05);
+        border: none;
+    }
+
+    .book-one img:hover {
+        transform: scale(1.05);
+        border: none
+    }
+
+    .book-two {
+        display: inline;
+        font-size: 20px;
+        line-height: 0.25;
+
+        p {
+            margin-left: -13%;
+            width: 100%;
+
+        }
+
+        img {
+            width: 100%;
+            height: 50vh;
+            border: solid 13px rgb(238, 121, 131);
+            margin-top: 9vh;
+            border-radius: 0.8rem;
+            margin-bottom: 5%;
+            margin-left: -30%;
+
+
+        }
+    }
+
+}
+
+    @media only screen and (min-width:751px) and (max-width:999px) {
+
+        .body {
+            overflow: hidden;
+        }
+
+        .books {
+            background-image: url(images/background1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 170vh;
+            width: 100%;
+            padding-top: 10%;
+    
+    
+        }
+    
+        .two-books {
+          display: flex;
+            margin-left: 12%;
+            margin-top: 3%;
+    
+        }
+    
+        .book-one {
+            display: inline;
+            font-size: 20px;
+            line-height: 0.25;
+    
+            p {
+                margin-left: -25%;
+            }
+    
+            img {
+                height: 40vh;
+                width: 100%;
+                border-radius: 0.8rem;
+                margin-left: -30%;
+                margin-bottom: 4%;
+            }
+        }
+    
+        .book-two {
+            display: inline;
+            font-size: 20px;
+            line-height: 0.25;
+    
+            p {
+                margin-left: -13%;
+                width: 100%;
+    
+            }
+    
+            img {
+                width: 100%;
+                height: 40vh;
+                border: solid 13px rgb(238, 121, 131);
+                border-radius: 0.8rem;
+                margin-bottom: 4%;
+                margin-left: -30%;
+    
+    
+            }
+        }
+    
+    }
+
+    @media only screen and (min-width:1000px) and (max-width:1300px){ 
+
+        .body {
+            overflow: hidden;
+        }
+
+        .books {
+            background-image: url(images/background1.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 170vh;
+            width: 100%;
+            padding-top: 10%;
+    
+    
+        }
+    
+        .two-books {
+          display: flex;
+            margin-left: 12%;
+            margin-top: 3%;
+            margin-top: 3%;
+    
+        }
+    
+        .book-one {
+            display: inline;
+            font-size: 40px;
+            line-height: 0.25;
+    
+            p {
+                margin-left: -25%;
+            }
+    
+            img {
+                height: 40vh;
+                width: 100%;
+                border-radius: 0.8rem;
+                margin-left: -30%;
+                margin-bottom: 4%;
+            }
+        }
+    
+        .book-two {
+            display: inline;
+            font-size: 40px;
+            line-height: 0.25;
+            
+    
+            p {
+                margin-left: -13%;
+                width: 100%;
+    
+            }
+    
+            img {
+                width: 100%;
+                height: 40vh;
+                border: solid 13px rgb(238, 121, 131);
+                border-radius: 0.8rem;
+                margin-bottom: 4%;
+                margin-left: -30%;
+    
+    
+            }
+        }
+
+    }

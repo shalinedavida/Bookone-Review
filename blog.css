@@ -6,24 +6,7 @@
 body{
     font-family: poppins;
 }
-.borders{
-    display:flex
-}
 
-.border-one{
-border-bottom: 5px;
-border-color: blue;
-
-}
-
-.border-two{
-    border-bottom: 5px;
-}
-
-.border-three{
-    border-bottom: 5px solid blue;
-    height: 100px;
-}
 .book{
     display: flex;
     gap:10%;
@@ -38,7 +21,7 @@ img{
 
 #book-cover{
     height: 20vh;
-    width:10%;
+    width:12%;
 }
 
 
@@ -105,27 +88,297 @@ img{
 #quote{
     font-size: 25px;
     color: rgb(46, 46, 153);
-}
-
-#left-icon {
-    color: rgb(46, 46, 153);
-    font-size: 20px;
-    right: 90%;
-    top: 78vh;
-    position: absolute;
-  }
-
-  #right-icon{
-    color: rgb(46, 46, 153);
-    font-size: 20px;
-    left: 33.5%;
-   top:88vh;
-    position: absolute;
-  }
+    text-align: center;
+    margin-bottom: 5%;
+} 
 
 .image img{
     width: 90%;
     height: 50vh;
     margin-left: 20%;
-    margin-top: 45%;
+    margin-top: 55%;
 }
+
+
+
+   
+
+
+@media only screen and (max-width:750px) {
+    .body{
+        overflow-x: hidden;
+    }
+    .title{
+        background-size: 100vw;
+        overflow: hidden;
+        margin-top:-5%;
+         width:100%;
+         display: flex;
+         gap:25%;
+         height: 15vh;
+    
+         h1{
+        color:white;
+            font-size: 25px;
+        margin-top: 10%;
+        margin-left:4%;
+         }
+    }
+
+    .details{
+        display:inline;
+            font-size: 16px;
+            color:black;
+        
+           
+        
+       p{
+        width: 90%;
+        margin-top: 13%;
+        margin-left: 4%
+       } 
+       
+    }
+
+    .book{
+        flex-direction: column;
+        gap:10%;
+        margin-left: 0%;
+        align-items: center;
+        margin-top: 10%;
+        width:100%;
+    img{
+        height:20vh;
+            width:50%;
+            margin-bottom: 10%;
+        
+    
+    }
+    }
+    
+    #book-cover{
+        height: 20vh;
+        width:44%;
+
+    }
+
+    .reflection-contents{
+        display: inline;
+        font-size: 16px;
+        line-height: 1.7;
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        margin-top: 3%;
+        h1{
+            font-size: 26px;
+            text-align: center;
+            margin-bottom: 13%;
+        }
+    
+    }
+
+    #quote{
+        font-size: 16px;
+        color: rgb(46, 46, 153);
+        margin-bottom: 10%;
+    }
+
+
+    .reflection{
+        flex-direction: column;
+    }
+
+    .image img{
+        width: 90%;
+        height: 35vh;
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+}
+
+
+    @media only screen and (min-width:751px) and (max-width:999px) {
+
+        .body{
+            overflow-x: hidden;
+        }
+        .title{
+            background-size: 100vw;
+            overflow: hidden;
+            margin-top:-5%;
+             width:100%;
+             display: flex;
+             gap:25%;
+             height: 15vh;
+        
+             h1{
+            color:white;
+                font-size: 50px;
+            margin-top: 7%;
+            margin-left:4%;
+             }
+        }
+
+
+    .details{
+        display:inline;
+            font-size: 22px;
+            color:black;
+        
+    p{
+        width: 90%;
+        margin-top: 8%;
+        margin-left: 4%
+       } 
+       
+    }
+
+    .book{
+        display: flex;
+        gap:5%;
+        margin-left:2%;
+        margin-top: 10%;
+    img{
+        height:20vh;
+            width:20%;
+    
+    }
+    }
+    
+    #book-cover{
+        height: 20vh;
+        width:22%;
+    }
+
+
+    .reflection{
+        flex-direction: column;
+    }
+
+    .reflection-contents{
+        display: inline;
+        font-size: 22px;
+        line-height: 1.7;
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        margin-top: 3%;
+        h1{
+            font-size: 50px;
+            margin-bottom: 10%;
+        }
+    
+    }
+
+    #quote{
+        font-size: 2px;
+        color: rgb(46, 46, 153);
+        margin-bottom: 10%;
+    }
+
+
+    .reflection{
+        flex-direction: column;
+    }
+
+    .image img{
+        width: 70%;
+        height: 35vh;
+        margin-top: 10%;
+        margin-left: 15%;
+    }
+    }
+
+
+
+    @media only screen and (min-width:1000px) and (max-width:1300px){ 
+        .body{
+            overflow-x: hidden;
+        }
+        .title{
+            background-size: 100vw;
+            overflow: hidden;
+            margin-top:-5%;
+             width:100%;
+             display: flex;
+             gap:25%;
+             height: 20vh;
+        
+             h1{
+            color:white;
+                font-size: 90px;
+            margin-top: 10%;
+            margin-left:3%;
+             }
+        }
+
+
+    .details{
+        display:inline;
+            font-size: 40px;
+            color:black;
+        
+    p{
+        width: 90%;
+        margin-top: 8%;
+        margin-left: 5%
+       } 
+       
+    }
+
+    .book{
+        display: flex;
+        gap:4%;
+        margin-left:2%;
+        margin-top: 10%;
+    img{
+        height:20vh;
+            width:22%;
+    
+    }
+    }
+    
+    #book-cover{
+        height: 20vh;
+        width:25%;
+    }
+
+
+    .reflection{
+        flex-direction: column;
+    }
+
+    .reflection-contents{
+        display: inline;
+        font-size: 40px;
+        line-height: 1.7;
+        width: 80%;
+        margin-left: 10%;
+        text-align: center;
+        margin-top: 3%;
+        h1{
+            font-size: 90px;
+    
+        }
+    
+    }
+
+    #quote{
+        font-size: 45px;
+        color: rgb(46, 46, 153);
+        margin-bottom: 10%;
+    }
+
+
+    .reflection{
+        flex-direction: column;
+    }
+
+    .image img{
+        width: 75%;
+        height: 40vh;
+        margin-top: 10%;
+        margin-left: 14%;
+    }
+    }
