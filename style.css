@@ -1,245 +1,551 @@
-.memoir{
-   
-    margin-top: 0%;
-    position: relative;
-   
+@import url("https://db.onlinewebfonts.com/c/bf35ddaa105b41dd66cb2eb93424c588?family=American+Typewriter+Normal");
 
-    h1{
-        font-size: 500%;
-        color: royalblue;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
 
-    }
-   
+body {
+    margin: 0;
+    font-family: "American Typewriter Normal", sans-serif;
+    background: #1a1a1a;
+    color: #f0f0f0;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
-.buttons a{
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(34, 34, 34, 0.9);
+    padding: 1vh 2.5vw;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+}
+
+.nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-brand:hover {
+    transform: scale(1.05);
+}
+
+.nav-brand img {
+    height: 8vh;
+    width: auto;
+    border-radius: 50%;
+    border: 2px solid #8db53d;
+    padding: 3px;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-brand h2 {
+    color: #8db53d;
+    font-size: 3vh;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-menu {
     position: relative;
-    color: black;
-    font-size: 1.5em;
+    display: flex;
+    gap: 3vw;
+    padding-right: 2vw;
+}
+
+.nav-link {
+    font-size: 2.5vh;
+    color: #f0f0f0;
     text-decoration: none;
-    border: none;
-    background-color: rgba(190, 92, 92, 0.822);
-    padding: 2% 4%;
-    border-radius: 20px;
-    box-shadow: 15px 18px 10px -8px rgb(156, 145, 145);
-    margin-top: 2vh;
-    margin-bottom: 5vh; 
-    /* height: 5vh; */
+    padding: 1vh 1.5vw;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-}
-.buttons{
-   
-    display: flex;
-    margin-left: 30vw;
-    gap: 13vw;
-}
-body{
-    
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    background-color:rgb(192, 241, 217) ;
-     overflow-x: hidden;
-
-}
-.vl{
-    height: 700px;
-    border-left: 3px solid black;
-    margin-top: 5%;
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
     left: 50%;
+    width: 0;
+    height: 2px;
+    background: #8db53d;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
-#explanation{
-    color:navy;
-    font-size: 150%;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
 
+.nav-link:hover {
+    color: #8db53d;
+    transform: translateY(-3px);
 }
-#trevorpic{
-  width: 400px;
-  height: 400px;
-  padding-left: 600px;
-  
+
+.nav-link:hover::after {
+    width: 100%;
+    left: 0;
 }
-.society{
-    width: 45%;
-    height: 90vh;
-    overflow: scroll;
-}
-.society::-webkit-scrollbar{
-    display: none;
-}
-.blog{
+
+.hero-section {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+        url(./images/bookbackground.jpg);
+    height: 100vh;
     display: flex;
-    gap: 2cm;
-    
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10vw;
+    position: relative;
+    overflow: hidden;
 }
-.protestimage{
-    margin-left: 100px;
+
+.hero-content {
+    max-width: 800px;
+    z-index: 2;
 }
-#abel{
-    color:navy;
-    font-size: 150%;
-    text-align: left;
-    margin-left: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-   
+
+.hero-title {
+    font-size: 6vh;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 2vh;
+    position: relative;
+    animation: textReveal 1.5s ease-out;
 }
-#femicidepicture{
-    width: 600px;
-    height: 800px;
-    margin-top: 30px;
+
+@keyframes textReveal {
+    0% { opacity: 0; transform: translateX(-50px); }
+    100% { opacity: 1; transform: translateX(0); }
+}
+
+.hero-subtitle {
+    font-size: 3vh;
+    margin-bottom: 5vh;
+    opacity: 0.8;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 2vw;
+}
+
+.cta-button {
+    padding: 2vh 4vw;
+    border: 2px solid #8db53d;
+    border-radius: 50px;
+    color: #8db53d;
+    text-decoration: none;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    background: #8db53d;
+    color: #1a1a1a;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(141,181,61,0.3);
+}
+.about_container {
+    padding: 10vh 10vw;
+    background: #1a1a1a;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5vw;
+    align-items: center;
+    margin-top: 10vh;
+}
+
+.profile-details {
+    background: rgba(255,255,255,0.05);
+    padding: 5vh 5vw;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.author-name {
+    color: #8db53d;
+    font-size: 5vh;
+    margin-bottom: 3vh;
+    position: relative;
+}
+
+.author-name::after {
+    content: '';
+    position: absolute;
+    bottom: -1vh;
+    left: 0;
+    width: 100px;
+    height: 3px;
+    background: #8db53d;
+}
+
+.summary {
+    line-height: 1.8;
+    font-size: 2.2vh;
+    opacity: 0.9;
+}
+
+.book-title {
+    margin: 4vh 0;
+    font-size: 3vh;
+    color: #8db53d;
+}
+footer {
+    background: rgba(0,0,0,0.9);
+    padding: 5vh 0;
+    text-align: center;
+    backdrop-filter: blur(10px);
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+    margin-bottom: 3vh;
+}
+
+.social-links a {
+    color: #8db53d;
+    font-size: 4vh;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-links a:hover {
+    color: #c0d8a0;
+    transform: translateY(-5px);
+}
+.suggested-title-section {
+padding: 8vh 10vw;
+background: rgba(255, 255, 255, 0.05);
+border-radius: 20px;
+max-width: 900px;
+margin: 10vh auto;
+color: #f0f0f0;
+}
+
+.suggested-title-section h2 {
+color: #8db53d;
+font-size: 4.5vh;
+margin-bottom: 2vh;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+
+.suggested-title-section p {
+font-size: 2.2vh;
+margin-bottom: 2vh;
+line-height: 1.6;
+opacity: 0.85;
+}
+
+.suggested-title-section h3 {
+color: #8db53d;
+font-size: 3vh;
+margin-bottom: 1vh;
+}
+.reflective-blog-section {
+background: rgba(255,255,255,0.05);
+border-radius: 18px;
+max-width: 850px;
+margin: 8vh auto 0 auto;
+padding: 6vh 7vw;
+box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+color: #f0f0f0;
+}
+
+.reflective-blog-section h2 {
+color: #8db53d;
+font-size: 4vh;
+margin-bottom: 2vh;
+letter-spacing: 1.5px;
+text-transform: uppercase;
+}
+
+.reflective-blog-section blockquote {
+border-left: 4px solid #8db53d;
+background: rgba(141,181,61,0.07);
+margin: 2vh 0 3vh 0;
+padding: 1.5vh 2vw;
+font-style: italic;
+color: #c0d8a0;
+font-size: 2.2vh;
+border-radius: 8px;
+}
+
+.reflective-blog-section h3 {
+color: #8db53d;
+font-size: 2.7vh;
+margin-top: 2vh;
+margin-bottom: 1.5vh;
+}
+
+.reflective-blog-section p {
+font-size: 2vh;
+line-height: 1.7;
+margin-bottom: 1.6vh;
+opacity: 0.93;
+}
 
 
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
 }
-@media only screen and  (max-width:800px){
-    .memoir{
-     margin-top: 0%;
-        position: relative;
-
-        h1{
-            font-size: 300%;
-            color: royalblue;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-       
-    }
+@media only screen and (max-width:750px) {
     body{
-        
-        background-size: cover;
-        height: 100vh;
-        width: 100vw;
-        background-color:rgb(192, 241, 217) ;
-        
-         overflow-x: hidden;
-    
+        overflow: hidden;
     }
-    .vl{
-        height: 700px;
-        border-left: 3px solid black;
-        margin-top: 5%;
-        left: 50%;
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2vh 5vw;
+      position: static;
     }
-    #explanation{
-        color:navy;
-        font-size: 130%;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
+    .nav-menu {
+      flex-direction: column;
+      gap: 2vh;
+      padding: 0;
+      width: 100%;
+      align-items: flex-start;
     }
-    #trevorpic{
-      width: 200px;
-      height: 200px;
-      padding-left: 250px;
-      
+    .nav-link {
+      font-size: 2.2vh;
+      padding: 1vh 0;
+      width: 100%;
+      display: block;
     }
-    .society{
-        width: 35%;
-        height: 90vh;
-        overflow: scroll;
+    .nav-brand img {
+      height: 6vh;
     }
-    .society::-webkit-scrollbar{
-        display: none;
+    .nav-brand h2 {
+      font-size: 2.2vh;
     }
-    .blog{
-        display: flex;
-        gap: 2cm;   
+  
+    .hero-section {
+      padding: 0 4vw;
+      align-items: center;
+      text-align: center;
+      height: auto;
+      min-height: 70vh;
     }
-    .protestimage{
-        margin-left: 10px;
+    .hero-title {
+      font-size: 4vh;
     }
-    #abel{
-        color:navy;
-        font-size: 130%;
-        text-align: left;
-        margin-left: 50px;
-        font-family: Arial, Helvetica, sans-serif;
+    .hero-subtitle {
+      font-size: 2.2vh;
     }
-    #femicidepicture{
-        width: 300px;
-        height: 500px;
-        margin-top: 30px;
-    
+    .cta-buttons {
+      flex-direction: column;
+      gap: 2vh;
     }
-    
-}
-@media only screen and  (max-width:400px){
-    .memoir{
-   
-        margin-top: 0%;
-        position: relative;
-       
-    
-        h1{
-            font-size: 200%;
-            color: royalblue;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-    
-        }
-       
+    .cta-button {
+      padding: 1.5vh 2vw;
+      width: 100%;
     }
+  
+    .about_container {
+      grid-template-columns: 1fr;
+      padding: 6vh 4vw;
+      gap: 3vh;
+      margin-top: 6vh;
+    }
+    .image-container {
+      margin-top: 3vh;
+    }
+    .profile-details {
+      padding: 3vh 3vw;
+    }
+    .author-name {
+      font-size: 3vh;
+    }
+    .book-title {
+      font-size: 2vh;
+    }
+    .summary {
+      font-size: 1.8vh;
+    }
+  
+    .suggested-title-section,
+    .reflective-blog-section {
+      padding: 4vh 3vw;
+      margin: 6vh 0;
+      max-width: 100%;
+      border-radius: 10px;
+    }
+    .suggested-title-section h2,
+    .reflective-blog-section h2 {
+      font-size: 2.5vh;
+    }
+    .suggested-title-section h3,
+    .reflective-blog-section h3 {
+      font-size: 2vh;
+    }
+    .reflective-blog-section blockquote {
+      font-size: 1.7vh;
+      padding: 1vh 1vw;
+    }
+    footer {
+      padding: 3vh 0;
+    }
+    .social-links {
+      gap: 6vw;
+    }
+  }
+  
+  @media only screen and (min-width:751px) and (max-width:999px) {
     body{
-        
-        background-size: cover;
-        height: 100vh;
-        width: 100vw;
-        background-color:rgb(192, 241, 217) ;
-         overflow-x: hidden;
-    
+        overflow: hidden;
     }
-    .vl{
-        height: 500px;
-        border-left: 2px solid black;
-        margin-top: 5%;
-        left: 30%;
+    .navbar-container {
+      padding: 1.5vh 4vw;
     }
-    #explanation{
-        color:navy;
-        font-size: 60%;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-    
+    .nav-brand img {
+      height: 7vh;
     }
-    #trevorpic{
-      width: 100px;
-      height: 100px;
-      padding-left: 100px;
-      
+    .nav-brand h2 {
+      font-size: 2.5vh;
     }
-    .society{
-        width: 40%;
-        height: 90vh;
-        overflow: scroll;
+    .nav-link {
+      font-size: 2.2vh;
+      padding: 1vh 1vw;
     }
-    .society::-webkit-scrollbar{
-        display: none;
+    .hero-section {
+      padding: 0 6vw;
+      min-height: 80vh;
     }
-    .blog{
-        /* display: block; */
-        display: flex;
-        gap: 2cm;
-        
+    .hero-title {
+      font-size: 5vh;
     }
-    .protestimage{
-        margin-left: 1px;
+    .hero-subtitle {
+      font-size: 2.5vh;
     }
-    #abel{
-        color:navy;
-        font-size: 70%;
-        text-align: left;
-        margin-left: 2px;
-        font-family: Arial, Helvetica, sans-serif;
-       
+    .cta-button {
+      padding: 1.8vh 3vw;
     }
-    #femicidepicture{
-        width: 100px;
-        height: 200px;
-        /* margin-top: -60%; */
-        margin-left: 30px;
-        
-    
+    .about_container {
+      grid-template-columns: 1fr 1fr;
+      padding: 8vh 5vw;
+      gap: 3vw;
+      margin-top: 8vh;
     }
-   
-}
+    .profile-details {
+      padding: 4vh 3vw;
+    }
+    .author-name {
+      font-size: 4vh;
+    }
+    .book-title {
+      font-size: 2.5vh;
+    }
+    .summary {
+      font-size: 2vh;
+    }
+    .suggested-title-section,
+    .reflective-blog-section {
+      padding: 5vh 5vw;
+      margin: 7vh auto;
+      max-width: 95vw;
+      border-radius: 15px;
+    }
+    .suggested-title-section h2,
+    .reflective-blog-section h2 {
+      font-size: 3vh;
+    }
+    .suggested-title-section h3,
+    .reflective-blog-section h3 {
+      font-size: 2.2vh;
+    }
+    .reflective-blog-section blockquote {
+      font-size: 2vh;
+      padding: 1.2vh 1.5vw;
+    }
+    footer {
+      padding: 4vh 0;
+    }
+    .social-links {
+      gap: 4vw;
+    }
+  }
+  
+  @media only screen and (min-width:1000px) and (max-width:1300px) {
+    body{
+        overflow: hidden;
+    }
+    .navbar-container {
+      padding: 1vh 3vw;
+    }
+    .nav-brand img {
+      height: 8vh;
+    }
+    .nav-brand h2 {
+      font-size: 3vh;
+    }
+    .nav-link {
+      font-size: 2.5vh;
+      padding: 1vh 1.2vw;
+    }
+    .hero-section {
+      padding: 0 8vw;
+      min-height: 90vh;
+    }
+    .hero-title {
+      font-size: 6vh;
+    }
+    .hero-subtitle {
+      font-size: 3vh;
+    }
+    .cta-button {
+      padding: 2vh 4vw;
+    }
+    .about_container {
+      grid-template-columns: 1fr 1fr;
+      padding: 10vh 8vw;
+      gap: 4vw;
+      margin-top: 10vh;
+    }
+    .profile-details {
+      padding: 5vh 4vw;
+    }
+    .author-name {
+      font-size: 5vh;
+    }
+    .book-title {
+      font-size: 3vh;
+    }
+    .summary {
+      font-size: 2.2vh;
+    }
+    .suggested-title-section,
+    .reflective-blog-section {
+      padding: 8vh 8vw;
+      margin: 10vh auto;
+      max-width: 90vw;
+      border-radius: 20px;
+    }
+    .suggested-title-section h2,
+    .reflective-blog-section h2 {
+      font-size: 4vh;
+    }
+    .suggested-title-section h3,
+    .reflective-blog-section h3 {
+      font-size: 2.7vh;
+    }
+    .reflective-blog-section blockquote {
+      font-size: 2.2vh;
+      padding: 1.5vh 2vw;
+    }
+    footer {
+      padding: 5vh 0;
+    }
+    .social-links {
+      gap: 3vw;
+    }
+  }
+  
