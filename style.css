@@ -56,7 +56,7 @@ gap: 4cm;
     font-size: 150%;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.5cm;
+    line-height: 1.2cm;
     padding-top: 60px;
 
 
@@ -120,9 +120,6 @@ gap: 4cm;
     border: solid 3px;
     border-color: grey;
     border-radius: 30px;
-  
-
-    
 }  
 
 .knowmore{
@@ -206,24 +203,19 @@ gap: 4cm;
     background-color: rgb(44, 41, 41);
     padding: 30px;
     display: flex;
-    gap: 3cm;
+    gap: 10cm;
     
 
     h2{
-        color: white;
+        color: rgb(228, 139, 38);
         font-family: Arial, Helvetica, sans-serif;
         font-size: 20px;
-        margin-left: 50px;
+        margin-left: 300px;
     }
     
     .words{
         display: block;
-        h3{
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 20px;
-            margin-left: 50px;
-    
+       
         }
         h4{
             color: rgb(228, 139, 38);
@@ -233,8 +225,8 @@ gap: 4cm;
 
     }
 
-}
-#footerwords{
+.footerwords{
+    margin-left: 150px;
     display: block;
     h3{
         color: white;
@@ -242,156 +234,7 @@ gap: 4cm;
 
     }
 }
-/* @media only screen and  (max-width:800px){
-    .memoir{
-     margin-top: 0%;
-        position: relative;
 
-        h1{
-            font-size: 300%;
-            color: royalblue;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-       
-    }
-    body{
-        
-        background-size: cover;
-        height: 100vh;
-        width: 100vw;
-        background-color:rgb(192, 241, 217) ;
-        
-         overflow-x: hidden;
-    
-    } */
-    /* .vl{
-        height: 700px;
-        border-left: 3px solid black;
-        margin-top: 5%;
-        left: 50%;
-    }
-    #explanation{
-        color:navy;
-        font-size: 130%;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    #trevorpic{
-      width: 200px;
-      height: 200px;
-      padding-left: 250px;
-      
-    }
-    .society{
-        width: 35%;
-        height: 90vh;
-        overflow: scroll;
-    }
-    .society::-webkit-scrollbar{
-        display: none;
-    }
-    .blog{
-        display: flex;
-        gap: 2cm;   
-    }
-    .protestimage{
-        margin-left: 10px;
-    }
-    #abel{
-        color:navy;
-        font-size: 130%;
-        text-align: left;
-        margin-left: 50px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
-    #femicidepicture{
-        width: 300px;
-        height: 500px;
-        margin-top: 30px;
-    
-    }
-    
-} */
-/* @media only screen and  (max-width:400px){
-    .memoir{
-   
-        margin-top: 0%;
-        position: relative;
-       
-    
-        h1{
-            font-size: 200%;
-            color: royalblue;
-            text-align: center;
-            font-family: Arial, Helvetica, sans-serif;
-    
-        }
-       
-    }
-    body{
-        
-        background-size: cover;
-        height: 100vh;
-        width: 100vw;
-        background-color:rgb(192, 241, 217) ;
-         overflow-x: hidden;
-    
-    }
-    .vl{
-        height: 500px;
-        border-left: 2px solid black;
-        margin-top: 5%;
-        left: 30%;
-    }
-    #explanation{
-        color:navy;
-        font-size: 60%;
-        text-align: center;
-        font-family: Arial, Helvetica, sans-serif;
-    
-    }
-    #trevorpic{
-      width: 100px;
-      height: 100px;
-      padding-left: 100px;
-      
-    }
-    .society{
-        width: 40%;
-        height: 90vh;
-        overflow: scroll;
-    }
-    .society::-webkit-scrollbar{
-        display: none;
-    }
-    .blog{
-        /* display: block; */
-        /* display: flex; */
-        /* gap: 2cm; */
-        
-    /* }
-    .protestimage{
-        margin-left: 1px;
-    }
-    #abel{
-        color:navy;
-        font-size: 70%;
-        text-align: left;
-        margin-left: 2px;
-        font-family: Arial, Helvetica, sans-serif;
-       
-    }
-    #femicidepicture{
-        width: 100px;
-        height: 200px;
-        /* margin-top: -60%; */
-        /* margin-left: 30px; */
-        
-    
-    
-/*    
-} */ 
  @media only screen and (max-width:1300px) and (min-width:801px){
     .memoir{
    
@@ -601,6 +444,499 @@ gap: 4cm;
         border-color:black ;
         background-color: rgb(44, 41, 41);
         padding: 30px;
+        display: flex;
+        gap: 3cm;
+
+        
+    
+        h2{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin-left: 50px;
+        }
+        
+        .words{
+            display: block;
+            h3{
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                margin-left: 50px;
+        
+            }
+            h4{
+                color: rgb(228, 139, 38);
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+        }
+    
+    }
+    #footerwords{
+        display: block;
+        h3{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+    
+        }
+    }
+ }
+ @media only screen and (max-width:800px) and (min-width:401px){
+    .memoir{
+   
+        margin-top: 0%;
+        position: relative;
+        
+       
+    
+        h1{
+            font-size: 300%;
+            color: black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+    
+        }
+       
+    }
+    .header{
+        border: solid 1px;
+        border-radius: 20px;
+        background-color: rgb(44, 41, 41);
+        padding: 15px 0px 15px 10px;
+        display: flex;
+        gap: 2cm;
+      
+        
+       
+       
+    }
+    .header a{
+        text-decoration: none;
+        color: rgb(228, 139, 38) ;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 200%;
+        gap: 3cm;
+    }
+    body{
+      
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+         overflow-x: hidden;
+         background-color: rgb(255, 220, 232);
+       
+    }
+    .vl{
+        height: 700px;
+        border-left: 3px solid black;
+        margin-top: 5%;
+        left: 50%;
+    }
+    .trevorexplanation{
+    display: block;
+    gap: 4cm;
+    }
+    #explanation{
+        color:black;
+        font-size: 150%;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.5cm;
+        padding-top: 60px;
+    
+    
+    }
+    
+    #trevorpic{
+        width: 200px;
+        height: 300px;
+        padding-left: 250px;
+        border: #000;
+        border-radius: 10px;
+      }
+    .pictures{
+        display: flex;
+        gap: 7cm;
+        border: solid 1px ;
+        border-color: gray;
+        background-color: rgb(34, 32, 32);
+        padding-left: 10px;
+        border-radius: 15px;
+    }
+       
+    .reflection{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 200%;
+       
+    
+    }
+    .reflection:hover{
+        cursor: pointer;
+        text-decoration: none;
+        color: gray;
+    }
+    #mumpicture{
+        width:200px;
+        height: 200px;
+        border: solid 2px;
+        border-color: black;
+        border-radius: 50px;
+    
+    }
+    #headshot{
+        width:200px;
+        height: 200px;
+        border: solid 2px;
+        border-color: black;
+        border-radius: 50px;
+    }
+    
+    
+    #author{
+        text-align: center;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 400%;
+    }
+    #differentbook{
+        width:200px;
+        height:300px;
+        border: solid 3px;
+        border-color: grey;
+        border-radius: 30px;
+      
+    
+        
+    }  
+    
+    .knowmore{
+        margin-left: 50px;
+        display: flex;
+        gap:6cm;
+        font-size: 200%;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    .knowmore a{
+        color:black;
+        text-decoration: none;
+      
+    }
+    .otherbook{
+        display: flex;
+        gap: 1cm;
+        zoom: 1.2;
+      
+       
+    } 
+    .otherbook:hover{
+        cursor: pointer;
+        
+    }
+    #firstbook{
+         width:200px;
+        height:300px;
+        border: solid 1px;
+        border-color: white;
+        border-radius: 30px;
+        margin-left: 60px;
+    }
+    .society{
+        width: 45%;
+        height: 90vh;
+        overflow: scroll;
+    }
+    .society::-webkit-scrollbar{
+        /* display: none; */
+    }
+    .blog{
+        display: flex;
+        gap: 2cm;
+        border: solid 3px;
+        border-color: black;
+        border-radius: 30px;
+        background-color:rgb(44, 41, 41);
+        width: 160vh;
+        margin-left: 60px;
+        
+    }
+    .protestimage{
+        margin-left: 10px;
+    }
+    #abel{
+        color:white;
+        font-size: 120%;
+        text-align: left;
+        margin-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+       
+    }
+    #femicidepicture{
+        width: 500px;
+        height: 600px;
+        margin-top: 30px;
+        border: solid 1 px;
+        border-color: black;
+        border-radius: 30px;
+        padding-top: 50px;
+    
+    
+    }
+    .footer{
+        border: solid 1px;
+        border-color:black ;
+        background-color: rgb(44, 41, 41);
+        padding: 3px;
+        display: flex;
+        gap: 3cm;
+
+        
+    
+        h2{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin-left: 50px;
+        }
+        
+        .words{
+            display: block;
+            h3{
+                color: white;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                margin-left: 50px;
+        
+            }
+            h4{
+                color: rgb(228, 139, 38);
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    
+        }
+    
+    }
+    #footerwords{
+        display: block;
+        h3{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+    
+        }
+    }
+ }
+ @media only screen and (max-width:400px) and (min-width:0px){
+    .memoir{
+   
+        margin-top: 0%;
+        position: relative;
+        
+       
+    
+        h1{
+            font-size: 200%;
+            color: black;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+    
+        }
+       
+    }
+    .header{
+        border: solid 1px;
+        border-radius: 20px;
+        background-color: rgb(44, 41, 41);
+        padding: 15px 0px 15px 10px;
+        display: flex;
+        gap: 1cm;
+      
+        
+       
+       
+    }
+    .header a{
+        text-decoration: none;
+        color: rgb(228, 139, 38) ;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 100%;
+        gap: 3cm;
+    }
+    body{
+      
+        background-size: cover;
+        height: 100vh;
+        width: 100vw;
+         overflow-x: hidden;
+         background-color: rgb(255, 220, 232);
+       
+    }
+    .vl{
+        height: 270px;
+        border-left: 3px solid black;
+        margin-top: 5%;
+        left: 50%;
+    }
+    .trevorexplanation{
+    display: block;
+    gap: 4cm;
+    }
+    #explanation{
+        color:black;
+        font-size: 100%;
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.0cm;
+        padding-top: 60px;
+    
+    
+    }
+    
+    #trevorpic{
+        width: 100px;
+        height: 200px;
+        padding-left: 150px;
+        border: #000;
+        border-radius: 10px;
+      }
+    .pictures{
+        display: flex;
+        gap: 2cm;
+        border: solid 1px ;
+        border-color: gray;
+        background-color: rgb(34, 32, 32);
+        padding-left: 10px;
+        border-radius: 15px;
+    }
+       
+    .reflection{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 200%;
+       
+    
+    }
+    .reflection:hover{
+        cursor: pointer;
+        text-decoration: none;
+        color: gray;
+    }
+    #mumpicture{
+        width:150px;
+        height: 150px;
+        border: solid 2px;
+        border-color: black;
+        border-radius: 50px;
+    
+    }
+    #headshot{
+        width:150px;
+        height: 150px;
+        border: solid 2px;
+        border-color: black;
+        border-radius: 50px;
+    }
+    
+    
+    #author{
+        text-align: center;
+        color: #000;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 250%;
+    }
+    #differentbook{
+        width:100px;
+        height:200px;
+        border: solid 3px;
+        border-color: grey;
+        border-radius: 30px;
+      
+    
+        
+    }  
+    
+    .knowmore{
+        margin-left: 50px;
+        display: flex;
+        gap:4cm;
+        font-size: 150%;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    .knowmore a{
+        color:black;
+        text-decoration: none;
+      
+    }
+    .otherbook{
+        display: flex;
+        gap: 1cm;
+        zoom: 1.2;
+      
+       
+    } 
+    .otherbook:hover{
+        cursor: pointer;
+        
+    }
+    #firstbook{
+         width:100px;
+        height:200px;
+        border: solid 1px;
+        border-color: white;
+        border-radius: 30px;
+        margin-left: 60px;
+    }
+    .society{
+        width: 45%;
+        height: 40vh;
+        overflow: scroll;
+    }
+    .society::-webkit-scrollbar{
+        /* display: none; */
+    }
+    .blog{
+        display: flex;
+        gap: 2cm;
+        border: solid 3px;
+        border-color: black;
+        border-radius: 30px;
+        background-color:rgb(44, 41, 41);
+        width: 50vh;
+        margin-left: 10px;
+        height: 40vh;
+        
+    }
+    .protestimage{
+        margin-left: 10px;
+    }
+    #abel{
+        color:white;
+        font-size: 70%;
+        text-align: left;
+        margin-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+       
+    }
+    #femicidepicture{
+        width: 100px;
+        height: 200px;
+        margin-top: 10px;
+        border: solid 1 px;
+        border-color: black;
+        border-radius: 30px;
+        /* padding-top: 50px; */
+    
+    
+    }
+    .footer{
+        border: solid 1px;
+        border-color:black ;
+        background-color: rgb(44, 41, 41);
+        padding: 3px;
         display: flex;
         gap: 3cm;
 
